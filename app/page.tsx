@@ -12,7 +12,7 @@ export default function Home() {
           </div>
 
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-zinc-50 md:text-5xl">
-            Proprietary stabilized chromogenic substrate platform
+            Proprietary stabilized chromogenic platform
           </h1>
 
           <p className="mt-4 text-base leading-7 text-zinc-300">
