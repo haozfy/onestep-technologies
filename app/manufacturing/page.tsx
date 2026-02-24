@@ -5,53 +5,57 @@ export default function ManufacturingPage() {
     <div className="space-y-10">
       <section>
         <div className="flex flex-wrap items-center gap-2">
-          <Badge>Dual-Node Model</Badge>
-          <Badge>IP Isolation</Badge>
-          <Badge>Global Scalability</Badge>
+          <Badge>Manufacturing Model</Badge>
+          <Badge>IP Retention</Badge>
+          <Badge>Partner Execution</Badge>
         </div>
 
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-50">
-          The Decoupled Supply Chain
+          Controlled Manufacturing Structure
         </h1>
 
         <p className="mt-3 text-base leading-7 text-zinc-300">
-          OneStep utilizes a "Concentrate-to-Bottling" dual-node manufacturing model. We physically decouple the creation of our proprietary IP from the mass-volume localized filling process, ensuring absolute trade-secret protection while empowering regional Tier-1 partners with frictionless manufacturing capabilities.
+          OneStep employs a decoupled manufacturing approach in which core formulation
+          development and governance remain centralized, while qualified OEM/CDMO partners
+          execute standardized downstream operations.
         </p>
 
         <p className="mt-3 text-sm leading-6 text-zinc-400">
-          This outlines the control-and-governance framework for corporate diligence. Partner-specific operational assets are entirely excluded.
+          This structure is designed to preserve intellectual property ownership while
+          enabling scalable production capacity across regions.
         </p>
       </section>
 
       <section className="grid gap-6 md:grid-cols-3">
         <Card
-          title="Node 1: IP Centralization"
-          desc="All proprietary high-concentration mother liquors are synthesized, stabilized, and strictly controlled at our Burnaby headquarters. No sensitive IP leaves our facility."
+          title="Centralized IP Governance"
+          desc="Core formulation frameworks and process knowledge remain under OneStep control."
         />
         <Card
-          title="Node 2: CDMO Execution"
-          desc="Certified Tier-1 partners execute standardized downstream processes (dilution & fill-finish). Capacity is infinitely reallocable without rewriting the core asset."
+          title="Qualified Partner Execution"
+          desc="Downstream dilution and fill-finish operations are performed by vetted manufacturing partners."
         />
         <Card
-          title="Defined QC Gates"
-          desc="Standardized inputs, thermal windows, and release protocols sustain absolute reproducibility and eliminate operational dependency risks."
+          title="Defined Control Points"
+          desc="Inputs, process windows, and release criteria are structured to support reproducibility."
         />
       </section>
 
       <section className="grid gap-6 md:grid-cols-2">
         <Card
           title="Quality Governance"
-          desc="Acceptance criteria and COA generation are designed to align with ISO 13485 standards and seamlessly pass rigorous M&A compliance audits."
+          desc="Batch documentation and release logic are structured to support audit review under confidentiality."
         />
         <Card
-          title="Risk Containment"
-          desc="Zero R&D risk for CDMOs. Zero formulation guesswork. Deployment data and client-specific parameters remain strictly confidential."
+          title="Confidentiality Boundaries"
+          desc="Partner-specific operational details and sensitive parameters are not disclosed publicly."
         />
       </section>
 
       <section className="rounded-2xl border border-zinc-800/80 bg-zinc-900/30 p-6">
         <p className="text-sm leading-6 text-zinc-400">
-          Access to secured manufacturing documentation (batch records, QA release protocols, stability master files, and reproducibility packages) is exclusively governed by NDA.
+          Detailed manufacturing documentation, including batch records and QC framework,
+          is accessible exclusively under executed NDA.
         </p>
       </section>
     </div>
