@@ -1,4 +1,4 @@
-import { Badge, Card, Muted, PrimaryLink } from "../components/ui";
+import { Badge, Card, PrimaryLink } from "../components/ui";
 
 export default function Home() {
   return (
@@ -6,7 +6,7 @@ export default function Home() {
       <section className="grid gap-10 md:grid-cols-12 md:items-end">
         <div className="md:col-span-8">
           <div className="flex flex-wrap items-center gap-2">
-            <Badge>Controlled Access</Badge>
+            <Badge>High-level overview</Badge>
             <Badge>Industrial-Scale Ready</Badge>
           </div>
 
@@ -15,8 +15,8 @@ export default function Home() {
           </h1>
 
           <p className="mt-4 text-base leading-7 text-zinc-300">
-            This portal provides high-level technical visibility of the platform architecture and manufacturing
-            model. Sensitive formulation and process parameters are intentionally omitted.
+            High-level technical visibility of platform architecture and manufacturing model. Sensitive formulation
+            composition and process parameters are intentionally omitted.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
@@ -24,15 +24,16 @@ export default function Home() {
             <PrimaryLink href="/manufacturing">Manufacturing model</PrimaryLink>
           </div>
 
+          {/* NDA 规则只放一次：这里是唯一入口 */}
           <p className="mt-4 text-xs text-zinc-500">
-            Comprehensive technical documentation is governed by NDA.
+            Access to detailed technical materials is governed by NDA.
           </p>
         </div>
 
         <div className="md:col-span-4">
           <Card
-            title="Confidential materials"
-            desc="Detailed technical documentation is made available under NDA."
+            title="Documentation package"
+            desc="Structured materials for technical diligence (under confidentiality)."
           >
             <div className="mt-3 space-y-2 text-sm text-zinc-300">
               <div className="flex items-center justify-between border-b border-zinc-800/70 pb-2">
@@ -63,18 +64,12 @@ export default function Home() {
         />
         <Card
           title="Scope of disclosure"
-          desc="This portal outlines capability and structural model only. No formulation composition or partner-specific assets are presented."
+          desc="Capability and structural model only. No formulation composition or partner-specific assets are presented."
         />
         <Card
           title="Intended audience"
           desc="Strategic partners, OEM/CDMO, and corporate development or technical diligence teams."
         />
-      </section>
-
-      <section className="rounded-2xl border border-zinc-800/80 bg-zinc-900/30 p-6">
-        <Muted>
-          This portal provides high-level capability visibility only. Access to full technical materials is governed by standard confidentiality terms.
-        </Muted>
       </section>
     </div>
   );
