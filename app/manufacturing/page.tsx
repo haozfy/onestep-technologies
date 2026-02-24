@@ -34,8 +34,7 @@ export default function ManufacturingPage() {
 
       <section className="rounded-2xl border border-zinc-800/80 bg-zinc-900/30 p-6">
         <Muted>
-          Equipment or partner-specific assets are not shown here unless ownership and usage rights are contractually clear.
-          NDA-first workflow applies for any detailed documentation.
+          Partner-specific configurations and manufacturing data are strictly confidential. Detailed documentation is accessible exclusively via our secured data room post-NDA.
         </Muted>
       </section>
     </div>
