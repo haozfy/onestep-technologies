@@ -5,56 +5,53 @@ export default function ManufacturingPage() {
     <div className="space-y-10">
       <section>
         <div className="flex flex-wrap items-center gap-2">
-          <Badge>Manufacturing</Badge>
-          <Badge>Control model</Badge>
-          <Badge>Partner execution</Badge>
+          <Badge>Dual-Node Model</Badge>
+          <Badge>IP Isolation</Badge>
+          <Badge>Global Scalability</Badge>
         </div>
 
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-50">
-          Manufacturing model
+          The Decoupled Supply Chain
         </h1>
 
         <p className="mt-3 text-base leading-7 text-zinc-300">
-          The manufacturing model is designed to preserve IP ownership while enabling scalable execution with qualified OEM/CDMO
-          partners. The strategic intent is to keep critical control points centralized while keeping execution capacity modular
-          and replaceable.
+          OneStep utilizes a "Concentrate-to-Bottling" dual-node manufacturing model. We physically decouple the creation of our proprietary IP from the mass-volume localized filling process, ensuring absolute trade-secret protection while empowering regional Tier-1 partners with frictionless manufacturing capabilities.
         </p>
 
         <p className="mt-3 text-sm leading-6 text-zinc-400">
-          This is a control-and-governance description for diligence and partner alignment; partner-specific assets and parameters are not disclosed here.
+          This outlines the control-and-governance framework for corporate diligence. Partner-specific operational assets are entirely excluded.
         </p>
       </section>
 
       <section className="grid gap-6 md:grid-cols-3">
         <Card
-          title="IP retained"
-          desc="Core know-how and process package remain with OneStep (Canada). Manufacturing execution does not imply transfer."
+          title="Node 1: IP Centralization"
+          desc="All proprietary high-concentration mother liquors are synthesized, stabilized, and strictly controlled at our Burnaby headquarters. No sensitive IP leaves our facility."
         />
         <Card
-          title="Replaceable execution"
-          desc="Qualified partners support blending / fill-finish. Capacity can be reallocated without rewriting the core asset."
+          title="Node 2: CDMO Execution"
+          desc="Certified Tier-1 partners execute standardized downstream processes (dilution & fill-finish). Capacity is infinitely reallocable without rewriting the core asset."
         />
         <Card
-          title="Defined control points"
-          desc="Inputs, process windows, and QC gates are defined to sustain reproducibility and reduce operational dependency risk."
+          title="Defined QC Gates"
+          desc="Standardized inputs, thermal windows, and release protocols sustain absolute reproducibility and eliminate operational dependency risks."
         />
       </section>
 
       <section className="grid gap-6 md:grid-cols-2">
         <Card
-          title="Quality governance"
-          desc="Acceptance criteria and batch-release logic are designed to be auditable and consistent across qualified sites."
+          title="Quality Governance"
+          desc="Acceptance criteria and COA generation are designed to align with ISO 13485 standards and seamlessly pass rigorous M&A compliance audits."
         />
         <Card
-          title="Risk containment"
-          desc="Partner-specific configurations and detailed manufacturing data remain confidential; disclosure is governed by NDA."
+          title="Risk Containment"
+          desc="Zero R&D risk for CDMOs. Zero formulation guesswork. Deployment data and client-specific parameters remain strictly confidential."
         />
       </section>
 
       <section className="rounded-2xl border border-zinc-800/80 bg-zinc-900/30 p-6">
         <p className="text-sm leading-6 text-zinc-400">
-          Access to detailed manufacturing documentation (batch records, QC plan, stability data, and reproducibility package)
-          is governed by NDA.
+          Access to secured manufacturing documentation (batch records, QA release protocols, stability master files, and reproducibility packages) is exclusively governed by NDA.
         </p>
       </section>
     </div>

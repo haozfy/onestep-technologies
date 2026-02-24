@@ -6,52 +6,50 @@ export default function Home() {
       <section className="grid gap-10 md:grid-cols-12 md:items-end">
         <div className="md:col-span-8">
           <div className="flex flex-wrap items-center gap-2">
-            <Badge>Platform overview</Badge>
-            <Badge>Scale-oriented</Badge>
-            <Badge>Diligence-ready</Badge>
+            <Badge>Platform Overview</Badge>
+            <Badge>Industrial-Scale</Badge>
+            <Badge>M&A Diligence-Ready</Badge>
           </div>
 
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-zinc-50 md:text-5xl">
-            Proprietary stabilized chromogenic platform
+            Proprietary Chromogenic Architecture for Advanced Water Analytics
           </h1>
 
           <p className="mt-4 text-base leading-7 text-zinc-300">
-            OneStep provides an IP-owned formulation and process-control package designed for reproducible manufacturing
-            at scale. This portal presents platform architecture and the manufacturing control model; sensitive composition
-            and proprietary parameters are intentionally omitted.
+            OneStep Technologies engineers ultra-stable, high-yield reagent concentrates for the global water quality and IVD industries. We operate strictly upstream, providing the proprietary core chemistry that powers industry-leading analytical instruments.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <PrimaryLink href="/platform">Platform</PrimaryLink>
-            <PrimaryLink href="/manufacturing">Manufacturing model</PrimaryLink>
+            <PrimaryLink href="/platform">Core Architecture</PrimaryLink>
+            <PrimaryLink href="/manufacturing">Manufacturing Model</PrimaryLink>
           </div>
 
           <p className="mt-4 text-xs text-zinc-500">
-            Access to detailed technical materials is governed by NDA.
+            To protect our strategic partners, all specific formulation data and customized kinetic profiles are fully redacted from public view. Access is strictly governed by NDA.
           </p>
         </div>
 
         <div className="md:col-span-4">
           <Card
-            title="Why this is an asset"
-            desc="Designed to reduce replication risk and increase transferability across qualified manufacturing partners."
+            title="Strategic Asset Value"
+            desc="Engineered to eliminate replication risk and maximize valuation multiples during corporate diligence."
           >
             <div className="mt-3 space-y-2 text-sm text-zinc-300">
               <div className="flex items-center justify-between border-b border-zinc-800/70 pb-2">
-                <span>Stability advantage</span>
-                <span className="text-zinc-400">Manufacturable</span>
+                <span>Kinetic Stability</span>
+                <span className="text-zinc-400">Zero-Drift</span>
               </div>
               <div className="flex items-center justify-between border-b border-zinc-800/70 pb-2">
-                <span>Process control</span>
-                <span className="text-zinc-400">Reproducible</span>
+                <span>Process Control</span>
+                <span className="text-zinc-400">Highly Reproducible</span>
               </div>
               <div className="flex items-center justify-between border-b border-zinc-800/70 pb-2">
-                <span>Partner model</span>
-                <span className="text-zinc-400">Replaceable</span>
+                <span>Supply Chain</span>
+                <span className="text-zinc-400">Modular & Decoupled</span>
               </div>
               <div className="flex items-center justify-between">
-                <span>Diligence package</span>
-                <span className="text-zinc-400">Structured</span>
+                <span>Diligence Package</span>
+                <span className="text-zinc-400">Audit-Ready</span>
               </div>
             </div>
           </Card>
@@ -60,16 +58,16 @@ export default function Home() {
 
       <section className="grid gap-6 md:grid-cols-3">
         <Card
-          title="Value proposition"
-          desc="A stability-first platform engineered for consistent batch outcomes and scalable manufacturing execution."
+          title="Core Value Proposition"
+          desc="A stability-first platform resolving the kinetic variance of traditional indicators, built for seamless batch outcomes at an industrial scale."
         />
         <Card
-          title="Scope of disclosure"
-          desc="Architecture and control model only. No formulation composition, partner assets, or proprietary parameters are presented."
+          title="Scope of Disclosure"
+          desc="Strictly limited to high-level architecture. Zero formulation composition or partner-specific parameters are presented."
         />
         <Card
-          title="Intended audience"
-          desc="Corporate development / technical diligence teams and qualified OEM/CDMO partners."
+          title="Intended Audience"
+          desc="Corporate development, M&A technical diligence teams, and qualified Tier-1 OEM/CDMO partners."
         />
       </section>
     </div>
