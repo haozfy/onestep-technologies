@@ -1,31 +1,34 @@
 import { Badge, Card, PrimaryLink } from "../components/ui";
 
-const patents = [
+const patentGroups = [
   {
-    title: "Stabilized Chromogenic Reagent Architecture",
-    desc: "Core reagent chemistry designed for stability, longer usability, and practical field deployment.",
+    title: "Reagent Chemistry",
+    desc: "Stabilized chromogenic reagent architecture designed for longer usability, field practicality, and repeatable deployment.",
+    items: [
+      "Stabilized Chromogenic Reagent Architecture",
+    ],
   },
   {
-    title: "Kinetics-Based Optical Detection Architecture for Automated Water Monitoring",
-    desc: "Reaction-kinetic detection logic for automated optical analysis in continuous water monitoring.",
+    title: "Detection & System Architecture",
+    desc: "Kinetics-based optical detection logic and integrated analytical system design for automated online water monitoring.",
+    items: [
+      "Kinetics-Based Optical Detection Architecture for Automated Water Monitoring",
+      "Integrated Chromogenic Analytical System Architecture with Flow-Cell Optical Detection",
+    ],
   },
   {
-    title: "Integrated Chromogenic Analytical System Architecture with Flow-Cell Optical Detection",
-    desc: "Instrument-system architecture integrating chromogenic chemistry with flow-cell optical detection.",
-  },
-  {
-    title: "Chromogenic Reagent Systems for Continuous Automated Water Quality Monitoring",
-    desc: "Reagent deployment architecture for continuous and automated water-quality monitoring workflows.",
-  },
-  {
-    title: "Industrial-Scale Non-Aqueous Chromogenic Reagent Manufacturing Platform",
-    desc: "Manufacturing platform designed for scalable, repeatable industrial reagent production.",
+    title: "Manufacturing & Deployment",
+    desc: "Platform coverage extending from reagent deployment workflows to scalable industrial manufacturing.",
+    items: [
+      "Chromogenic Reagent Systems for Continuous Automated Water Quality Monitoring",
+      "Industrial-Scale Non-Aqueous Chromogenic Reagent Manufacturing Platform",
+    ],
   },
 ];
 
 export default function Home() {
   return (
-    <div className="space-y-12">
+    <div className="space-y-14">
       <section className="grid gap-10 md:grid-cols-12 md:items-end">
         <div className="md:col-span-8">
           <div className="flex flex-wrap items-center gap-2">
@@ -46,10 +49,9 @@ export default function Home() {
           </p>
 
           <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-300">
-            The core direction is a stabilized single-reagent architecture combined with
-            reaction-kinetic optical detection. Compared with more conventional online
-            workflows, this approach is intended to reduce maintenance burden, improve
-            practical usability, and better support continuous real-world deployment.
+            The platform combines stabilized single-reagent chemistry with
+            reaction-kinetic optical detection, creating a more practical route for
+            continuous chlorine monitoring in real-world operating environments.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
@@ -130,9 +132,17 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
-          {patents.map((patent) => (
-            <Card key={patent.title} title={patent.title} desc={patent.desc} />
+        <div className="grid gap-6 md:grid-cols-3">
+          {patentGroups.map((group) => (
+            <Card key={group.title} title={group.title} desc={group.desc}>
+              <ul className="mt-4 space-y-2 text-sm leading-6 text-zinc-300">
+                {group.items.map((item) => (
+                  <li key={item} className="border-t border-zinc-800/70 pt-2 first:border-t-0 first:pt-0">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </Card>
           ))}
         </div>
       </section>
