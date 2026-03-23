@@ -55,7 +55,9 @@ export default function Home() {
           <div className="mt-6 flex flex-wrap gap-3">
             <PrimaryLink href="/platform">Technology Overview</PrimaryLink>
             <PrimaryLink href="/manufacturing">Manufacturing Model</PrimaryLink>
-            <PrimaryLink href="/contact">Request Technical Summary</PrimaryLink>
+            <PrimaryLink href="mailto:contact@onestep-technologies.com?subject=Request%20Technical%20Summary">
+              Request Technical Summary
+            </PrimaryLink>
           </div>
 
           <p className="mt-4 text-xs leading-6 text-zinc-500">

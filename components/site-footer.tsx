@@ -11,8 +11,13 @@ export function SiteFooter() {
           practical online free chlorine monitoring.
         </div>
 
-        <div className="mt-4 text-xs text-zinc-600">
-          contact@onestep-technologies.com
+        <div className="mt-4 text-xs">
+          <a
+            href="mailto:contact@onestep-technologies.com"
+            className="text-zinc-600 hover:text-zinc-900"
+          >
+            contact@onestep-technologies.com
+          </a>
         </div>
 
         <div className="mt-6 text-xs text-zinc-400">

@@ -4,7 +4,7 @@ const nav = [
   { href: "/", label: "Overview" },
   { href: "/platform", label: "Platform" },
   { href: "/manufacturing", label: "Manufacturing" },
-  { href: "/contact", label: "Contact" },
+  { href: "/resources", label: "Resources" },
 ];
 
 export function SiteHeader() {
