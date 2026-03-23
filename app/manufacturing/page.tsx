@@ -5,67 +5,67 @@ export default function ManufacturingPage() {
     <div className="space-y-12 bg-white text-zinc-900">
       <section>
         <div className="flex flex-wrap items-center gap-2">
-          <Badge>Manufacturing Model</Badge>
-          <Badge>Scalable Supply</Badge>
-          <Badge>Controlled Technology Transfer</Badge>
+          <Badge>Manufacturing</Badge>
+          <Badge>Scalable Production</Badge>
+          <Badge>Commercial Supply Readiness</Badge>
         </div>
 
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-950">
-          Manufacturing model for scalable and controlled reagent production
+          Manufacturing readiness for practical reagent supply
         </h1>
 
         <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
-          OneStep Technologies is developing a manufacturing structure designed to support
-          repeatable production of stabilized chromogenic reagent systems for water-analysis
-          applications. The model combines centralized control of core chemistry and process
-          know-how with execution by qualified manufacturing partners where appropriate.
+          OneStep Technologies is developing stabilized chromogenic reagent systems
+          with commercial production in mind. The manufacturing direction is intended
+          to support repeatable batch quality, scalable output, and practical supply
+          for automated water-analysis applications.
         </p>
 
         <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
-          This approach is intended to preserve control over key technology elements while
-          enabling practical scale-up, regional supply flexibility, and smoother transfer
-          into OEM, CDMO, or future commercial production environments.
+          This is important because a useful reagent platform must work not only in
+          analytical testing, but also in production, packaging, distribution, and
+          long-term field deployment.
         </p>
       </section>
 
       <section className="grid gap-6 md:grid-cols-3">
         <Card
-          title="Core technology control"
-          desc="Key reagent chemistry, process logic, and critical know-how remain under OneStep control to protect consistency and intellectual property."
+          title="Built for scale"
+          desc="The manufacturing direction is intended to support scale-up from early production to larger commercial supply."
         />
         <Card
-          title="Qualified partner execution"
-          desc="Selected downstream manufacturing steps can be carried out by qualified partners using defined operating windows and transfer frameworks."
+          title="Built for consistency"
+          desc="The platform is being developed with repeatable batch performance and practical production reliability in mind."
         />
         <Card
-          title="Scalable production path"
-          desc="The model is designed to support scale-up from early production to larger commercial supply without losing process discipline."
+          title="Built for supply"
+          desc="The long-term objective is a reagent platform that can support real-world commercial distribution and instrument deployment."
         />
       </section>
 
       <section className="grid gap-6 md:grid-cols-2">
         <Card
           title="Why this matters"
-          desc="For instrument companies and commercial partners, a workable manufacturing path is as important as the chemistry itself. A reagent platform must be stable not only in use, but also in production, transfer, and supply."
+          desc="For instrument companies and commercial partners, chemistry alone is not enough. A reagent platform must also be manufacturable, stable in supply, and suitable for deployment beyond the laboratory."
         />
         <Card
-          title="Designed for transferability"
-          desc="The manufacturing concept is built around reproducibility, controlled inputs, and practical handoff to qualified production environments, supporting long-term deployment rather than laboratory-only success."
+          title="Commercial relevance"
+          desc="The manufacturing strategy is aligned with the practical requirements of OEM integration, scale-up, and long-term product support."
         />
       </section>
 
       <section className="grid gap-6 md:grid-cols-3">
         <Card
-          title="Process consistency"
-          desc="Defined control points are intended to support reproducible batch outcomes across qualified production settings."
+          title="Repeatable production"
+          desc="The platform is being developed with emphasis on reproducibility across production batches."
         />
         <Card
-          title="Regional flexibility"
-          desc="A partner-enabled structure can support future multi-region manufacturing and supply strategies."
+          title="Operational practicality"
+          desc="Manufacturing considerations are tied directly to packaging, handling, and field usability."
         />
         <Card
-          title="IP-conscious scale-up"
-          desc="The manufacturing model is designed to balance protection of core know-how with practical commercial execution."
+          title="Future-ready supply"
+          desc="The goal is a production path that can support broader market deployment as the platform advances."
         />
       </section>
     </div>
