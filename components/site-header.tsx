@@ -3,37 +3,35 @@ import Link from "next/link";
 const nav = [
   { href: "/", label: "Overview" },
   { href: "/platform", label: "Platform" },
-  { href: "/manufacturing", label: "Manufacturing Model" },
+  { href: "/manufacturing", label: "Manufacturing" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export function SiteHeader() {
   return (
     <header className="mx-auto max-w-6xl px-6 pt-8">
       <div className="flex items-center justify-between">
-        {/* Brand */}
         <Link href="/" className="group inline-flex items-center gap-3">
-          {/* Enterprise mark (no “black block” look) */}
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-zinc-800/80 bg-zinc-900/30 text-[11px] font-semibold tracking-[0.22em] text-zinc-200 shadow-[0_0_0_1px_rgba(255,255,255,0.03)_inset]">
+          <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-zinc-200 bg-zinc-100 text-[11px] font-semibold tracking-[0.22em] text-zinc-700">
             OS
           </div>
 
           <div className="leading-tight">
-            <div className="text-sm font-semibold tracking-wide text-zinc-100">
-              OneStep Technologies Inc.
+            <div className="text-sm font-semibold tracking-wide text-zinc-900">
+              OneStep Technologies
             </div>
-            <div className="mt-0.5 text-xs text-zinc-400">
-              Confidential Technical Portal
+            <div className="mt-0.5 text-xs text-zinc-500">
+              Online Free Chlorine Monitoring
             </div>
           </div>
         </Link>
 
-        {/* Nav */}
         <nav className="hidden items-center gap-1 md:flex">
           {nav.map((i) => (
             <Link
               key={i.href}
               href={i.href}
-              className="rounded-lg px-3 py-2 text-sm text-zinc-300 hover:bg-zinc-900/40 hover:text-zinc-50"
+              className="rounded-lg px-3 py-2 text-sm text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900"
             >
               {i.label}
             </Link>
@@ -41,8 +39,7 @@ export function SiteHeader() {
         </nav>
       </div>
 
-      {/* Divider */}
-      <div className="mt-6 border-t border-zinc-800/80" />
+      <div className="mt-6 border-t border-zinc-200" />
     </header>
   );
 }
