@@ -4,9 +4,7 @@ const patentGroups = [
   {
     title: "Reagent Chemistry",
     desc: "Stabilized chromogenic reagent architecture designed for longer usability, field practicality, and repeatable deployment.",
-    items: [
-      "Stabilized Chromogenic Reagent Architecture",
-    ],
+    items: ["Stabilized Chromogenic Reagent Architecture"],
   },
   {
     title: "Detection & System Architecture",
@@ -28,7 +26,7 @@ const patentGroups = [
 
 export default function Home() {
   return (
-    <div className="space-y-14">
+    <div className="space-y-14 bg-white text-zinc-900">
       <section className="grid gap-10 md:grid-cols-12 md:items-end">
         <div className="md:col-span-8">
           <div className="flex flex-wrap items-center gap-2">
@@ -37,18 +35,18 @@ export default function Home() {
             <Badge>Reaction-Kinetic Detection</Badge>
           </div>
 
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-zinc-50 md:text-5xl">
+          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-zinc-950 md:text-5xl">
             Stabilized reagent systems for practical online free chlorine monitoring
           </h1>
 
-          <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-300">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-700">
             OneStep Technologies develops stabilized chromogenic reagent platforms for
             automated water analysis, with a current focus on online free chlorine
             monitoring. Our technology is designed to improve reagent stability,
             simplify operation, and support integration into instrument-based monitoring systems.
           </p>
 
-          <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-300">
+          <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-700">
             The platform combines stabilized single-reagent chemistry with
             reaction-kinetic optical detection, creating a more practical route for
             continuous chlorine monitoring in real-world operating environments.
@@ -68,29 +66,31 @@ export default function Home() {
         </div>
 
         <div className="md:col-span-4">
-          <Card
-            title="Why it matters"
-            desc="Built for practical deployment in automated chlorine-monitoring systems."
-          >
-            <div className="mt-3 space-y-2 text-sm text-zinc-300">
-              <div className="flex items-center justify-between border-b border-zinc-800/70 pb-2">
+          <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-sm">
+            <h3 className="text-lg font-semibold text-zinc-950">Why it matters</h3>
+            <p className="mt-1 text-sm leading-6 text-zinc-600">
+              Built for practical deployment in automated chlorine-monitoring systems.
+            </p>
+
+            <div className="mt-4 space-y-2 text-sm text-zinc-700">
+              <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
                 <span>Reagent workflow</span>
-                <span className="text-zinc-400">Simplified</span>
+                <span className="text-zinc-500">Simplified</span>
               </div>
-              <div className="flex items-center justify-between border-b border-zinc-800/70 pb-2">
+              <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
                 <span>Reagent stability</span>
-                <span className="text-zinc-400">Improved</span>
+                <span className="text-zinc-500">Improved</span>
               </div>
-              <div className="flex items-center justify-between border-b border-zinc-800/70 pb-2">
+              <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
                 <span>Continuous operation</span>
-                <span className="text-zinc-400">More practical</span>
+                <span className="text-zinc-500">More practical</span>
               </div>
               <div className="flex items-center justify-between">
                 <span>System integration</span>
-                <span className="text-zinc-400">Instrument-ready</span>
+                <span className="text-zinc-500">Instrument-ready</span>
               </div>
             </div>
-          </Card>
+          </div>
         </div>
       </section>
 
@@ -122,10 +122,10 @@ export default function Home() {
 
       <section className="space-y-6">
         <div>
-          <h2 className="text-2xl font-semibold tracking-tight text-zinc-50 md:text-3xl">
+          <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
             Patent Portfolio
           </h2>
-          <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-300">
+          <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
             Our intellectual property portfolio spans reagent chemistry, detection logic,
             analytical system integration, deployment workflows, and industrial-scale manufacturing.
             Together, these filings reflect a platform-level approach to practical automated water monitoring.
@@ -135,9 +135,12 @@ export default function Home() {
         <div className="grid gap-6 md:grid-cols-3">
           {patentGroups.map((group) => (
             <Card key={group.title} title={group.title} desc={group.desc}>
-              <ul className="mt-4 space-y-2 text-sm leading-6 text-zinc-300">
+              <ul className="mt-4 space-y-2 text-sm leading-6 text-zinc-700">
                 {group.items.map((item) => (
-                  <li key={item} className="border-t border-zinc-800/70 pt-2 first:border-t-0 first:pt-0">
+                  <li
+                    key={item}
+                    className="border-t border-zinc-200 pt-2 first:border-t-0 first:pt-0"
+                  >
                     {item}
                   </li>
                 ))}

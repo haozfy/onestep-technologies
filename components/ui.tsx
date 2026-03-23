@@ -1,8 +1,19 @@
 import Link from "next/link";
 
-export function Badge({ children }: { children: React.ReactNode }) {
+type WithClassName = {
+  className?: string;
+};
+
+export function Badge({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+} & WithClassName) {
   return (
-    <span className="inline-flex items-center rounded-full border border-zinc-800/80 bg-zinc-900/60 px-3 py-1 text-xs text-zinc-300">
+    <span
+      className={`inline-flex items-center rounded-full border border-zinc-200 bg-zinc-100 px-3 py-1 text-xs text-zinc-700 ${className}`}
+    >
       {children}
     </span>
   );
@@ -12,15 +23,18 @@ export function Card({
   title,
   desc,
   children,
+  className = "",
 }: {
   title: string;
   desc?: string;
   children?: React.ReactNode;
-}) {
+} & WithClassName) {
   return (
-    <div className="rounded-2xl border border-zinc-800/80 bg-zinc-900/40 p-6 shadow-[0_0_0_1px_rgba(255,255,255,0.03)_inset]">
-      <div className="text-sm font-semibold text-zinc-100">{title}</div>
-      {desc ? <div className="mt-2 text-sm leading-6 text-zinc-400">{desc}</div> : null}
+    <div
+      className={`rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm ${className}`}
+    >
+      <div className="text-sm font-semibold text-zinc-950">{title}</div>
+      {desc ? <div className="mt-2 text-sm leading-6 text-zinc-600">{desc}</div> : null}
       {children ? <div className="mt-4">{children}</div> : null}
     </div>
   );
@@ -29,20 +43,26 @@ export function Card({
 export function PrimaryLink({
   href,
   children,
+  className = "",
 }: {
   href: string;
   children: React.ReactNode;
-}) {
+} & WithClassName) {
   return (
     <Link
       href={href}
-      className="inline-flex items-center justify-center rounded-xl border border-zinc-800/80 bg-zinc-50/10 px-4 py-2 text-sm text-zinc-50 hover:bg-zinc-50/15"
+      className={`inline-flex items-center justify-center rounded-xl border border-zinc-200 bg-white px-4 py-2 text-sm text-zinc-900 shadow-sm hover:bg-zinc-50 ${className}`}
     >
       {children}
     </Link>
   );
 }
 
-export function Muted({ children }: { children: React.ReactNode }) {
-  return <p className="text-sm leading-6 text-zinc-400">{children}</p>;
+export function Muted({
+  children,
+  className = "",
+}: {
+  children: React.ReactNode;
+} & WithClassName) {
+  return <p className={`text-sm leading-6 text-zinc-500 ${className}`}>{children}</p>;
 }

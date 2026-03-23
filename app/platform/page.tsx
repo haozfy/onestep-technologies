@@ -2,53 +2,81 @@ import { Badge, Card } from "../../components/ui";
 
 export default function PlatformPage() {
   return (
-    <div className="space-y-10">
+    <div className="space-y-12">
       <section>
         <div className="flex flex-wrap items-center gap-2">
           <Badge>Core Platform</Badge>
-          <Badge>Stability-Oriented</Badge>
-          <Badge>Process-Controlled</Badge>
+          <Badge>Stabilized Reagent Chemistry</Badge>
+          <Badge>Reaction-Kinetic Detection</Badge>
         </div>
 
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-50">
-          Platform Architecture
+          Platform architecture for practical automated water monitoring
         </h1>
 
-        <p className="mt-3 text-base leading-7 text-zinc-300">
-          The OneStep platform combines proprietary formulation frameworks with defined
-          process-control logic. The objective is to support stable performance characteristics
-          while maintaining manufacturability across scale.
+        <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-300">
+          The OneStep platform combines stabilized chromogenic reagent chemistry with
+          reaction-kinetic optical detection for automated water-analysis applications.
+          Our current focus is online free chlorine monitoring, where reagent stability,
+          operational simplicity, and continuous usability are critical.
         </p>
 
-        <p className="mt-3 text-sm leading-6 text-zinc-400">
-          This page describes structural principles and system boundaries.
-          Proprietary composition and parameterization are not disclosed.
+        <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-300">
+          Rather than treating the reagent only as a laboratory formulation, the platform
+          is being developed as a deployment-oriented system architecture. That includes
+          reagent stability, workflow simplicity, compatibility with instrument integration,
+          and a practical path toward repeatable manufacturing and real-world operation.
+        </p>
+
+        <p className="mt-3 max-w-3xl text-sm leading-6 text-zinc-400">
+          Public information on this page is intended to explain the technical direction
+          and platform logic at a high level. Sensitive formulation details and partner-specific
+          implementation parameters are not disclosed publicly.
         </p>
       </section>
 
       <section className="grid gap-6 md:grid-cols-2">
         <Card
-          title="Stability Design"
-          desc="Formulation frameworks structured to support predictable performance under defined storage and handling conditions."
+          title="Stabilized reagent chemistry"
+          desc="The platform is built around stabilized chromogenic reagent systems designed for longer usability, improved storage behavior, and more practical deployment in automated monitoring workflows."
         />
         <Card
-          title="Process Control Logic"
-          desc="Defined sequencing and controlled processing parameters intended to support batch consistency."
+          title="Reaction-kinetic detection"
+          desc="Instead of relying only on conventional endpoint measurement logic, the platform incorporates reaction-kinetic optical analysis to support a different architecture for continuous water monitoring."
         />
         <Card
-          title="Scale Transfer Considerations"
-          desc="Engineered with emphasis on repeatable unit operations to reduce variability during scale expansion."
+          title="Single-reagent practicality"
+          desc="A key platform direction is simplified reagent handling through architectures intended to reduce operational complexity and support lower-maintenance continuous use."
         />
         <Card
-          title="Diligence Alignment"
-          desc="Technical documentation is organized to facilitate structured review under confidentiality."
+          title="Instrument integration"
+          desc="The platform is being developed with compatibility in mind for flow-cell optical systems and other reagent-integrated monitoring instruments."
+        />
+      </section>
+
+      <section className="grid gap-6 md:grid-cols-3">
+        <Card
+          title="What problem it addresses"
+          desc="Conventional online chlorine workflows can involve multiple reagents, limited stability, and more frequent maintenance demands. The platform is designed to support a more practical operating model."
+        />
+        <Card
+          title="Why it is different"
+          desc="The technical differentiation lies in the combination of stabilized reagent chemistry, kinetics-based detection logic, and a deployment-oriented system architecture rather than a chemistry-only approach."
+        />
+        <Card
+          title="Why it matters commercially"
+          desc="For instrument companies and commercial partners, useful chemistry must also be deployable, manufacturable, and compatible with real monitoring systems. That broader platform logic is built into the technology direction."
         />
       </section>
 
       <section className="rounded-2xl border border-zinc-800/80 bg-zinc-900/30 p-6">
-        <p className="text-sm leading-6 text-zinc-400">
-          Detailed validation data, stability records, and batch reproducibility documentation
-          are available under NDA via a secured data environment.
+        <h2 className="text-lg font-medium text-zinc-100">
+          Additional technical materials
+        </h2>
+        <p className="mt-3 max-w-3xl text-sm leading-6 text-zinc-400">
+          Additional validation data, public white papers, preprints, and other technical
+          materials may be shared in qualified discussions. Public content here is limited
+          to high-level platform explanation and application context.
         </p>
       </section>
     </div>
