@@ -68,17 +68,6 @@ export default function ManufacturingPage() {
           desc="The manufacturing model is designed to balance protection of core know-how with practical commercial execution."
         />
       </section>
-
-      <section className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6">
-        <h2 className="text-lg font-medium text-zinc-950">
-          Additional technical materials
-        </h2>
-        <p className="mt-3 max-w-3xl text-sm leading-6 text-zinc-500">
-          Public information on this page is limited to high-level manufacturing structure
-          and scale-up philosophy. More detailed manufacturing documentation, process
-          frameworks, and quality materials may be shared in qualified discussions.
-        </p>
-      </section>
     </div>
   );
 }

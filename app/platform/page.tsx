@@ -27,12 +27,6 @@ export default function PlatformPage() {
           reagent stability, workflow simplicity, compatibility with instrument integration,
           and a practical path toward repeatable manufacturing and real-world operation.
         </p>
-
-        <p className="mt-3 max-w-3xl text-sm leading-6 text-zinc-500">
-          Public information on this page is intended to explain the technical direction
-          and platform logic at a high level. Sensitive formulation details and partner-specific
-          implementation parameters are not disclosed publicly.
-        </p>
       </section>
 
       <section className="grid gap-6 md:grid-cols-2">
@@ -67,17 +61,6 @@ export default function PlatformPage() {
           title="Why it matters commercially"
           desc="For instrument companies and commercial partners, useful chemistry must also be deployable, manufacturable, and compatible with real monitoring systems. That broader platform logic is built into the technology direction."
         />
-      </section>
-
-      <section className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6">
-        <h2 className="text-lg font-medium text-zinc-950">
-          Additional technical materials
-        </h2>
-        <p className="mt-3 max-w-3xl text-sm leading-6 text-zinc-500">
-          Additional validation data, public white papers, preprints, and other technical
-          materials may be shared in qualified discussions. Public content here is limited
-          to high-level platform explanation and application context.
-        </p>
       </section>
     </div>
   );
