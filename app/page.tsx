@@ -1,58 +1,91 @@
 import { Badge, Card, PrimaryLink } from "../components/ui";
 
+const patents = [
+  {
+    title: "Stabilized Chromogenic Reagent Architecture",
+    desc: "Core reagent chemistry designed for stability, longer usability, and practical field deployment.",
+  },
+  {
+    title: "Kinetics-Based Optical Detection Architecture for Automated Water Monitoring",
+    desc: "Reaction-kinetic detection logic for automated optical analysis in continuous water monitoring.",
+  },
+  {
+    title: "Integrated Chromogenic Analytical System Architecture with Flow-Cell Optical Detection",
+    desc: "Instrument-system architecture integrating chromogenic chemistry with flow-cell optical detection.",
+  },
+  {
+    title: "Chromogenic Reagent Systems for Continuous Automated Water Quality Monitoring",
+    desc: "Reagent deployment architecture for continuous and automated water-quality monitoring workflows.",
+  },
+  {
+    title: "Industrial-Scale Non-Aqueous Chromogenic Reagent Manufacturing Platform",
+    desc: "Manufacturing platform designed for scalable, repeatable industrial reagent production.",
+  },
+];
+
 export default function Home() {
   return (
-    <div className="space-y-10">
+    <div className="space-y-12">
       <section className="grid gap-10 md:grid-cols-12 md:items-end">
         <div className="md:col-span-8">
           <div className="flex flex-wrap items-center gap-2">
-            <Badge>Platform Overview</Badge>
-            <Badge>Industrial Scale Orientation</Badge>
-            <Badge>Diligence Aligned</Badge>
+            <Badge>Online Water Monitoring</Badge>
+            <Badge>Stabilized Reagent Platform</Badge>
+            <Badge>Reaction-Kinetic Detection</Badge>
           </div>
 
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-zinc-50 md:text-5xl">
-            Proprietary Chromogenic Platform for Water Analytics
+            Stabilized reagent systems for practical online free chlorine monitoring
           </h1>
 
-          <p className="mt-4 text-base leading-7 text-zinc-300">
-            OneStep Technologies develops stabilized chromogenic reagent concentrates designed for scalable
-            manufacturing and integration into analytical systems. The company operates upstream, retaining
-            ownership of core formulation frameworks and process-control logic.
+          <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-300">
+            OneStep Technologies develops stabilized chromogenic reagent platforms for
+            automated water analysis, with a current focus on online free chlorine
+            monitoring. Our technology is designed to improve reagent stability,
+            simplify operation, and support integration into instrument-based monitoring systems.
+          </p>
+
+          <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-300">
+            The core direction is a stabilized single-reagent architecture combined with
+            reaction-kinetic optical detection. Compared with more conventional online
+            workflows, this approach is intended to reduce maintenance burden, improve
+            practical usability, and better support continuous real-world deployment.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <PrimaryLink href="/platform">Platform</PrimaryLink>
+            <PrimaryLink href="/platform">Technology Overview</PrimaryLink>
             <PrimaryLink href="/manufacturing">Manufacturing Model</PrimaryLink>
+            <PrimaryLink href="/contact">Request Technical Summary</PrimaryLink>
           </div>
 
-          <p className="mt-4 text-xs text-zinc-500">
-            This portal presents structural and architectural information only.
-            Detailed technical materials are available under NDA.
+          <p className="mt-4 text-xs leading-6 text-zinc-500">
+            This site provides a high-level overview of the platform, application direction,
+            and intellectual property portfolio. Additional technical materials may be shared
+            in qualified discussions.
           </p>
         </div>
 
         <div className="md:col-span-4">
           <Card
-            title="Asset Characteristics"
-            desc="Structured for stability, transferability, and controlled scalability."
+            title="Why it matters"
+            desc="Built for practical deployment in automated chlorine-monitoring systems."
           >
             <div className="mt-3 space-y-2 text-sm text-zinc-300">
               <div className="flex items-center justify-between border-b border-zinc-800/70 pb-2">
-                <span>Stability Framework</span>
-                <span className="text-zinc-400">Manufacturable</span>
+                <span>Reagent workflow</span>
+                <span className="text-zinc-400">Simplified</span>
               </div>
               <div className="flex items-center justify-between border-b border-zinc-800/70 pb-2">
-                <span>Process Governance</span>
-                <span className="text-zinc-400">Reproducible</span>
+                <span>Reagent stability</span>
+                <span className="text-zinc-400">Improved</span>
               </div>
               <div className="flex items-center justify-between border-b border-zinc-800/70 pb-2">
-                <span>Supply Structure</span>
-                <span className="text-zinc-400">Modular</span>
+                <span>Continuous operation</span>
+                <span className="text-zinc-400">More practical</span>
               </div>
               <div className="flex items-center justify-between">
-                <span>Diligence Package</span>
-                <span className="text-zinc-400">Structured</span>
+                <span>System integration</span>
+                <span className="text-zinc-400">Instrument-ready</span>
               </div>
             </div>
           </Card>
@@ -61,17 +94,47 @@ export default function Home() {
 
       <section className="grid gap-6 md:grid-cols-3">
         <Card
-          title="Value Proposition"
-          desc="A stability-oriented platform designed to support consistent batch outcomes and scalable transfer across qualified manufacturing environments."
+          title="What problem we address"
+          desc="Conventional online chlorine workflows can involve multiple reagents, limited stability, and higher maintenance demands during continuous operation. We are developing a more deployment-oriented reagent architecture for automated monitoring."
         />
         <Card
-          title="Scope of Disclosure"
-          desc="Architecture and governance model only. No formulation composition or partner-specific parameters are disclosed publicly."
+          title="Why our reagent platform is different"
+          desc="Our stabilized chromogenic system is designed around single-reagent practicality, reaction-kinetic detection, manufacturing transferability, and compatibility with integrated monitoring systems."
         />
         <Card
-          title="Intended Audience"
-          desc="Corporate development teams, technical diligence leads, and qualified OEM/CDMO partners."
+          title="Who this is for"
+          desc="Relevant to instrument companies, water-analysis teams, OEM partners, and organizations evaluating new reagent-integrated approaches to online chlorine monitoring."
         />
+      </section>
+
+      <section className="grid gap-6 md:grid-cols-2">
+        <Card
+          title="What we do"
+          desc="We develop stabilized reagent concentrates and workflow architectures for analytical systems used in water monitoring, especially where repeatable manufacturing, operational simplicity, and long-term usability matter."
+        />
+        <Card
+          title="Current focus"
+          desc="Our current technical focus is next-generation online free chlorine monitoring using stabilized TMB-derived chromogenic chemistry and kinetics-based optical detection logic."
+        />
+      </section>
+
+      <section className="space-y-6">
+        <div>
+          <h2 className="text-2xl font-semibold tracking-tight text-zinc-50 md:text-3xl">
+            Patent Portfolio
+          </h2>
+          <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-300">
+            Our intellectual property portfolio spans reagent chemistry, detection logic,
+            analytical system integration, deployment workflows, and industrial-scale manufacturing.
+            Together, these filings reflect a platform-level approach to practical automated water monitoring.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          {patents.map((patent) => (
+            <Card key={patent.title} title={patent.title} desc={patent.desc} />
+          ))}
+        </div>
       </section>
     </div>
   );
