@@ -2,7 +2,7 @@ import { Badge, Card } from "../../components/ui";
 
 export default function PlatformPage() {
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 bg-white text-zinc-900">
       <section>
         <div className="flex flex-wrap items-center gap-2">
           <Badge>Core Platform</Badge>
@@ -10,25 +10,25 @@ export default function PlatformPage() {
           <Badge>Reaction-Kinetic Detection</Badge>
         </div>
 
-        <h1 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-50">
+        <h1 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-950">
           Platform architecture for practical automated water monitoring
         </h1>
 
-        <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-300">
+        <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
           The OneStep platform combines stabilized chromogenic reagent chemistry with
           reaction-kinetic optical detection for automated water-analysis applications.
           Our current focus is online free chlorine monitoring, where reagent stability,
           operational simplicity, and continuous usability are critical.
         </p>
 
-        <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-300">
+        <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
           Rather than treating the reagent only as a laboratory formulation, the platform
           is being developed as a deployment-oriented system architecture. That includes
           reagent stability, workflow simplicity, compatibility with instrument integration,
           and a practical path toward repeatable manufacturing and real-world operation.
         </p>
 
-        <p className="mt-3 max-w-3xl text-sm leading-6 text-zinc-400">
+        <p className="mt-3 max-w-3xl text-sm leading-6 text-zinc-500">
           Public information on this page is intended to explain the technical direction
           and platform logic at a high level. Sensitive formulation details and partner-specific
           implementation parameters are not disclosed publicly.
@@ -69,11 +69,11 @@ export default function PlatformPage() {
         />
       </section>
 
-      <section className="rounded-2xl border border-zinc-800/80 bg-zinc-900/30 p-6">
-        <h2 className="text-lg font-medium text-zinc-100">
+      <section className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6">
+        <h2 className="text-lg font-medium text-zinc-950">
           Additional technical materials
         </h2>
-        <p className="mt-3 max-w-3xl text-sm leading-6 text-zinc-400">
+        <p className="mt-3 max-w-3xl text-sm leading-6 text-zinc-500">
           Additional validation data, public white papers, preprints, and other technical
           materials may be shared in qualified discussions. Public content here is limited
           to high-level platform explanation and application context.

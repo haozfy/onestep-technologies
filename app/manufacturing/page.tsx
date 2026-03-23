@@ -2,7 +2,7 @@ import { Badge, Card } from "../../components/ui";
 
 export default function ManufacturingPage() {
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 bg-white text-zinc-900">
       <section>
         <div className="flex flex-wrap items-center gap-2">
           <Badge>Manufacturing Model</Badge>
@@ -10,18 +10,18 @@ export default function ManufacturingPage() {
           <Badge>Controlled Technology Transfer</Badge>
         </div>
 
-        <h1 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-50">
+        <h1 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-950">
           Manufacturing model for scalable and controlled reagent production
         </h1>
 
-        <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-300">
+        <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
           OneStep Technologies is developing a manufacturing structure designed to support
           repeatable production of stabilized chromogenic reagent systems for water-analysis
           applications. The model combines centralized control of core chemistry and process
           know-how with execution by qualified manufacturing partners where appropriate.
         </p>
 
-        <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-300">
+        <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
           This approach is intended to preserve control over key technology elements while
           enabling practical scale-up, regional supply flexibility, and smoother transfer
           into OEM, CDMO, or future commercial production environments.
@@ -69,11 +69,11 @@ export default function ManufacturingPage() {
         />
       </section>
 
-      <section className="rounded-2xl border border-zinc-800/80 bg-zinc-900/30 p-6">
-        <h2 className="text-lg font-medium text-zinc-100">
+      <section className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6">
+        <h2 className="text-lg font-medium text-zinc-950">
           Additional technical materials
         </h2>
-        <p className="mt-3 max-w-3xl text-sm leading-6 text-zinc-400">
+        <p className="mt-3 max-w-3xl text-sm leading-6 text-zinc-500">
           Public information on this page is limited to high-level manufacturing structure
           and scale-up philosophy. More detailed manufacturing documentation, process
           frameworks, and quality materials may be shared in qualified discussions.
