@@ -11,40 +11,39 @@ export default function PlatformPage() {
         </div>
 
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-950">
-          Platform architecture for practical automated water monitoring
+          A practical platform for online free chlorine monitoring
         </h1>
 
         <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
-          The OneStep platform combines stabilized chromogenic reagent chemistry with
-          reaction-kinetic optical detection for automated water-analysis applications.
-          Our current focus is online free chlorine monitoring, where reagent stability,
-          operational simplicity, and continuous usability are critical.
+          OneStep Technologies is developing a stabilized chromogenic reagent platform
+          for automated water analysis, with a current focus on online free chlorine
+          monitoring. The platform combines stabilized reagent chemistry with
+          reaction-kinetic optical detection to support more practical continuous operation.
         </p>
 
         <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
-          Rather than treating the reagent only as a laboratory formulation, the platform
-          is being developed as a deployment-oriented system architecture. That includes
-          reagent stability, workflow simplicity, compatibility with instrument integration,
-          and a practical path toward repeatable manufacturing and real-world operation.
+          The goal is to improve reagent usability, simplify operation, and better
+          support integration into instrument-based monitoring systems used in real-world
+          water-analysis environments.
         </p>
       </section>
 
       <section className="grid gap-6 md:grid-cols-2">
         <Card
           title="Stabilized reagent chemistry"
-          desc="The platform is built around stabilized chromogenic reagent systems designed for longer usability, improved storage behavior, and more practical deployment in automated monitoring workflows."
+          desc="The platform is built around stabilized chromogenic reagent systems designed for longer usability, improved storage behavior, and more practical field deployment."
         />
         <Card
           title="Reaction-kinetic detection"
-          desc="Instead of relying only on conventional endpoint measurement logic, the platform incorporates reaction-kinetic optical analysis to support a different architecture for continuous water monitoring."
+          desc="The platform uses reaction-kinetic optical analysis as an alternative to conventional endpoint-only measurement logic in continuous water monitoring."
         />
         <Card
-          title="Single-reagent practicality"
-          desc="A key platform direction is simplified reagent handling through architectures intended to reduce operational complexity and support lower-maintenance continuous use."
+          title="Simplified reagent workflow"
+          desc="A key platform direction is reduced operational complexity through reagent architectures intended to support lower-maintenance continuous use."
         />
         <Card
-          title="Instrument integration"
-          desc="The platform is being developed with compatibility in mind for flow-cell optical systems and other reagent-integrated monitoring instruments."
+          title="Instrument compatibility"
+          desc="The platform is intended for integration into flow-cell optical systems and other reagent-based monitoring instruments."
         />
       </section>
 
@@ -55,11 +54,11 @@ export default function PlatformPage() {
         />
         <Card
           title="Why it is different"
-          desc="The technical differentiation lies in the combination of stabilized reagent chemistry, kinetics-based detection logic, and a deployment-oriented system architecture rather than a chemistry-only approach."
+          desc="The technical differentiation lies in the combination of stabilized reagent chemistry and kinetics-based detection, aimed at practical automated monitoring rather than chemistry alone."
         />
         <Card
-          title="Why it matters commercially"
-          desc="For instrument companies and commercial partners, useful chemistry must also be deployable, manufacturable, and compatible with real monitoring systems. That broader platform logic is built into the technology direction."
+          title="Why it matters"
+          desc="For instrument companies and commercial partners, useful chemistry must also be stable in operation, easy to work with, and suitable for real monitoring systems."
         />
       </section>
     </div>
