@@ -24,6 +24,21 @@ const patentGroups = [
   },
 ];
 
+const evidencePoints = [
+  {
+    title: "Reagent stability",
+    desc: "Up to 24 months at room temperature",
+  },
+  {
+    title: "Operational benefit",
+    desc: "Designed to reduce routine maintenance workload",
+  },
+  {
+    title: "Technical materials",
+    desc: "White paper and public preprints available",
+  },
+];
+
 export default function Home() {
   return (
     <div className="space-y-14 bg-white text-zinc-900">
@@ -43,7 +58,8 @@ export default function Home() {
             OneStep Technologies develops stabilized chromogenic reagent platforms for
             automated water analysis, with a current focus on online free chlorine
             monitoring. Our technology is designed to improve reagent stability,
-            simplify operation, and support integration into instrument-based monitoring systems.
+            simplify operation, reduce maintenance burden, and support integration into
+            OEM and instrument-based monitoring systems.
           </p>
 
           <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-700">
@@ -56,9 +72,7 @@ export default function Home() {
           <div className="mt-6 flex flex-wrap gap-3">
             <PrimaryLink href="/platform">Technology Overview</PrimaryLink>
             <PrimaryLink href="/manufacturing">Manufacturing Model</PrimaryLink>
-            <PrimaryLink href="mailto:contact@onestep-technologies.com?subject=Request%20Technical%20Summary">
-              Request Technical Summary
-            </PrimaryLink>
+            <PrimaryLink href="/resources">Resources</PrimaryLink>
           </div>
 
           <p className="mt-4 text-xs leading-6 text-zinc-500">
@@ -80,12 +94,12 @@ export default function Home() {
                 <span className="text-zinc-500">Simplified</span>
               </div>
               <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
-                <span>Reagent stability</span>
-                <span className="text-zinc-500">Improved</span>
+                <span>Maintenance workload</span>
+                <span className="text-zinc-500">Reduced</span>
               </div>
               <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
-                <span>Continuous operation</span>
-                <span className="text-zinc-500">More practical</span>
+                <span>Reagent stability</span>
+                <span className="text-zinc-500">Up to 24 months</span>
               </div>
               <div className="flex items-center justify-between">
                 <span>System integration</span>
@@ -94,6 +108,18 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="grid gap-4 md:grid-cols-3">
+        {evidencePoints.map((point) => (
+          <div
+            key={point.title}
+            className="rounded-xl border border-zinc-200 bg-zinc-50 p-4"
+          >
+            <div className="text-sm font-medium text-zinc-900">{point.title}</div>
+            <div className="mt-1 text-sm text-zinc-600">{point.desc}</div>
+          </div>
+        ))}
       </section>
 
       <section className="grid gap-6 md:grid-cols-3">
@@ -119,6 +145,13 @@ export default function Home() {
         <Card
           title="Current focus"
           desc="Our current technical focus is next-generation online free chlorine monitoring using stabilized TMB-derived chromogenic chemistry and kinetics-based optical detection logic."
+        />
+      </section>
+
+      <section className="grid gap-6 md:grid-cols-1">
+        <Card
+          title="Why this matters for OEM partners"
+          desc="The platform is being developed to support lower-maintenance reagent workflows, longer reagent life, and practical integration into automated water-monitoring instruments."
         />
       </section>
 
