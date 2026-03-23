@@ -48,14 +48,9 @@ export default function Home() {
 
           <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-700">
             The platform combines stabilized single-reagent chemistry with
-            reaction-kinetic optical detection, helping reduce routine maintenance
-            workload while supporting more practical continuous chlorine monitoring in
-            real-world operating environments.
-          </p>
-
-          <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-700">
-            The stabilized reagent platform has demonstrated room-temperature stability
-            of up to 24 months, supporting longer service intervals and lower operational burden.
+            reaction-kinetic optical detection to reduce routine maintenance workload
+            and support reagent stability of up to 24 months, creating a more practical
+            route for continuous chlorine monitoring in real-world operating environments.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
@@ -65,6 +60,11 @@ export default function Home() {
               Request Technical Summary
             </PrimaryLink>
           </div>
+
+          <p className="mt-4 text-xs leading-6 text-zinc-500">
+            This site provides a high-level overview of the platform, application direction,
+            and intellectual property portfolio.
+          </p>
         </div>
 
         <div className="md:col-span-4">
@@ -80,12 +80,12 @@ export default function Home() {
                 <span className="text-zinc-500">Simplified</span>
               </div>
               <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
-                <span>Maintenance workload</span>
-                <span className="text-zinc-500">Reduced</span>
+                <span>Reagent stability</span>
+                <span className="text-zinc-500">Improved</span>
               </div>
               <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
-                <span>Reagent stability</span>
-                <span className="text-zinc-500">Up to 24 months</span>
+                <span>Continuous operation</span>
+                <span className="text-zinc-500">More practical</span>
               </div>
               <div className="flex items-center justify-between">
                 <span>System integration</span>
@@ -99,7 +99,7 @@ export default function Home() {
       <section className="grid gap-6 md:grid-cols-3">
         <Card
           title="What problem we address"
-          desc="Conventional online chlorine workflows can involve multiple reagents, limited stability, and higher maintenance demands during continuous operation. We are developing a more practical reagent platform for automated monitoring."
+          desc="Conventional online chlorine workflows can involve multiple reagents, limited stability, and higher maintenance demands during continuous operation. We are developing a more practical platform for automated monitoring."
         />
         <Card
           title="Why our reagent platform is different"
@@ -107,7 +107,7 @@ export default function Home() {
         />
         <Card
           title="Who this is for"
-          desc="Relevant to instrument companies, water-analysis teams, OEM partners, and organizations evaluating lower-maintenance approaches to online chlorine monitoring."
+          desc="Relevant to instrument companies, water-analysis teams, OEM partners, and organizations evaluating new reagent-integrated approaches to online chlorine monitoring."
         />
       </section>
 
