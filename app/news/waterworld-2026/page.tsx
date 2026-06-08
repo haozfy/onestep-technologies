@@ -38,18 +38,18 @@ export default function WaterWorld2026Page() {
         </p>
 
         <p>
-          WaterWorld’s Emerging Leaders recognition highlights professionals and
-          innovators contributing to the future of water and wastewater
-          technology, utility operations, infrastructure, and water quality.
+          WaterWorld’s Emerging Leaders feature recognizes professionals working
+          across water and wastewater technology, utility operations,
+          infrastructure, and water quality.
         </p>
 
         <p>
           OneStep Technologies is developing low-maintenance online free chlorine
           monitoring technology based on stabilized reagent chemistry and optical
-          measurement. The company’s work focuses on improving continuous water
-          quality data reliability while reducing reagent burden, maintenance
-          requirements, consumables, downtime, and operator uncertainty in
-          repeated measurements.
+          measurement. The company’s work is aimed at supporting more reliable
+          continuous water quality data while reducing reagent burden,
+          maintenance requirements, consumables, and maintenance-related
+          downtime.
         </p>
 
         <blockquote className="border-l-4 border-zinc-300 pl-5 text-zinc-800">
@@ -66,9 +66,10 @@ export default function WaterWorld2026Page() {
         <p>
           Free chlorine monitoring is important for drinking water safety,
           wastewater reuse, industrial water treatment, emergency response, and
-          distributed water systems. However, online monitoring can be limited by
-          reagent handling, reagent aging, calibration needs, consumables,
-          fouling, downtime, and operator confidence in long-term data.
+          distributed water systems. However, online monitoring can be affected
+          by reagent handling, reagent aging, calibration needs, consumables,
+          optical or fluidic fouling, maintenance-related downtime, and operator
+          confidence in long-term data.
         </p>
 
         <p>
