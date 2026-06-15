@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const nav = [
   { href: "/", label: "Overview" },
+  { href: "/chlorine-monitor", label: "Product" },
   { href: "/platform", label: "Platform" },
   { href: "/manufacturing", label: "Manufacturing" },
   { href: "/resources", label: "Resources" },
@@ -28,13 +29,13 @@ export function SiteHeader() {
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
-          {nav.map((i) => (
+          {nav.map((item) => (
             <Link
-              key={i.href}
-              href={i.href}
+              key={item.href}
+              href={item.href}
               className="rounded-lg px-3 py-2 text-sm text-zinc-600 hover:bg-zinc-100 hover:text-zinc-900"
             >
-              {i.label}
+              {item.label}
             </Link>
           ))}
         </nav>
