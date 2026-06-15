@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const newsItems = [
   {
+    title: "OneStep Technologies Presentation Scheduled for ACS Fall 2026",
+    date: "June 2026",
+    href: "/news/acs-fall-2026",
+    description:
+      "Hao Zhang's presentation on a low-maintenance kinetic optical method for continuous free chlorine monitoring has been scheduled for the ACS Fall 2026 technical program.",
+  },
+  {
     title: "Hao Zhang Recognized as 2026 WaterWorld Emerging Leader",
     date: "June 2026",
     href: "/news/waterworld-2026",
