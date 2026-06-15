@@ -30,12 +30,12 @@ const evidencePoints = [
     desc: "Up to 24 months at room temperature",
   },
   {
-    title: "Operational benefit",
-    desc: "Designed to reduce routine maintenance workload",
+    title: "Maintenance model",
+    desc: "Designed to reduce reagent replacement and operator attention",
   },
   {
-    title: "Technical materials",
-    desc: "White paper and public preprints available",
+    title: "Product direction",
+    desc: "Online free-chlorine monitor for pilot partners",
   },
 ];
 
@@ -45,65 +45,75 @@ export default function Home() {
       <section className="grid gap-10 md:grid-cols-12 md:items-end">
         <div className="md:col-span-8">
           <div className="flex flex-wrap items-center gap-2">
-            <Badge>Online Water Monitoring</Badge>
-            <Badge>Stabilized Reagent Platform</Badge>
-            <Badge>Reaction-Kinetic Detection</Badge>
+            <Badge>Online Free Chlorine</Badge>
+            <Badge>24-Month Reagent Stability</Badge>
+            <Badge>Low-Maintenance Monitoring</Badge>
           </div>
 
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-zinc-950 md:text-5xl">
-            Stabilized reagent systems for practical online free chlorine monitoring
+            Low-maintenance online free-chlorine monitoring powered by stabilized reagent chemistry
           </h1>
 
           <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-700">
-            OneStep Technologies develops stabilized chromogenic reagent platforms for
-            automated water analysis, with a current focus on online free chlorine
-            monitoring. Our technology is designed to improve reagent stability,
-            simplify operation, reduce maintenance burden, and support integration into
-            OEM and instrument-based monitoring systems.
+            OneStep Technologies is developing online free-chlorine monitors for
+            water systems that need continuous residual-chlorine data but cannot
+            support frequent reagent replacement, probe maintenance, or manual
+            testing.
           </p>
 
           <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-700">
-            The platform combines stabilized single-reagent chemistry with
-            reaction-kinetic optical detection to reduce routine maintenance workload
-            and support reagent stability of up to 24 months, creating a more practical
-            route for continuous chlorine monitoring in real-world operating environments.
+            Our core technology is a stabilized single-reagent optical chemistry
+            for free-chlorine monitoring with up to 24-month room-temperature
+            stability, protected by U.S. patent rights. The platform is designed
+            to reduce the maintenance burden of reagent-based online chlorine
+            monitoring and support practical deployment in real water-system
+            workflows.
+          </p>
+
+          <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-700">
+            As water systems become more distributed, remote, reused, and
+            automated, operators need chlorine data that is not only accurate,
+            but continuous, maintainable, and trustworthy.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
+            <PrimaryLink href="/chlorine-monitor">Pilot Product</PrimaryLink>
             <PrimaryLink href="/platform">Technology Overview</PrimaryLink>
-            <PrimaryLink href="/manufacturing">Manufacturing Model</PrimaryLink>
             <PrimaryLink href="/resources">Resources</PrimaryLink>
           </div>
 
           <p className="mt-4 text-xs leading-6 text-zinc-500">
-            This site provides a high-level overview of the platform, application direction,
-            and intellectual property portfolio.
+            This site provides a high-level overview of the product direction,
+            technical platform, and intellectual property portfolio.
           </p>
         </div>
 
         <div className="md:col-span-4">
           <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-sm">
-            <h3 className="text-lg font-semibold text-zinc-950">Why it matters</h3>
+            <h3 className="text-lg font-semibold text-zinc-950">
+              Pilot product direction
+            </h3>
             <p className="mt-1 text-sm leading-6 text-zinc-600">
-              Built for practical deployment in automated chlorine-monitoring systems.
+              Built for water systems where continuous chlorine data is valuable,
+              but frequent maintenance is difficult.
             </p>
 
             <div className="mt-4 space-y-2 text-sm text-zinc-700">
               <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
-                <span>Reagent workflow</span>
-                <span className="text-zinc-500">Simplified</span>
-              </div>
-              <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
-                <span>Maintenance workload</span>
-                <span className="text-zinc-500">Reduced</span>
+                <span>Core chemistry</span>
+                <span className="text-zinc-500">Developed</span>
               </div>
               <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
                 <span>Reagent stability</span>
                 <span className="text-zinc-500">Up to 24 months</span>
               </div>
+              <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
+                <span>Maintenance burden</span>
+                <span className="text-zinc-500">Reduced</span>
+              </div>
               <div className="flex items-center justify-between">
-                <span>System integration</span>
-                <span className="text-zinc-500">Instrument-ready</span>
+                <span>Pilot partners</span>
+                <span className="text-zinc-500">Open</span>
               </div>
             </div>
           </div>
@@ -116,8 +126,12 @@ export default function Home() {
             key={point.title}
             className="rounded-xl border border-zinc-200 bg-zinc-50 p-4"
           >
-            <div className="text-sm font-medium text-zinc-900">{point.title}</div>
-            <div className="mt-1 text-sm text-zinc-600">{point.desc}</div>
+            <div className="text-sm font-medium text-zinc-900">
+              {point.title}
+            </div>
+            <div className="mt-1 text-sm leading-6 text-zinc-600">
+              {point.desc}
+            </div>
           </div>
         ))}
       </section>
@@ -125,34 +139,62 @@ export default function Home() {
       <section className="grid gap-6 md:grid-cols-3">
         <Card
           title="What problem we address"
-          desc="Conventional online chlorine workflows can involve multiple reagents, limited stability, and higher maintenance demands during continuous operation. We are developing a more practical platform for automated monitoring."
+          desc="Free chlorine is one of the most important operational signals in water systems, but many small, remote, reuse, and distributed sites still rely on manual testing or maintenance-heavy online analyzers."
         />
         <Card
-          title="Why our reagent platform is different"
-          desc="Our stabilized chromogenic system is designed around single-reagent practicality, reaction-kinetic detection, longer reagent life, and compatibility with integrated monitoring systems."
+          title="Why our chemistry is different"
+          desc="Our approach starts at the chemistry layer: stabilized single-reagent optical free-chlorine chemistry designed for longer reagent life and lower operator burden."
         />
         <Card
-          title="Who this is for"
-          desc="Relevant to instrument companies, water-analysis teams, OEM partners, and organizations evaluating new reagent-integrated approaches to online chlorine monitoring."
+          title="Why now"
+          desc="Remote operations, water reuse, distributed treatment, and AI-assisted water management all require reliable real-time field data, not occasional manual readings."
         />
       </section>
 
       <section className="grid gap-6 md:grid-cols-2">
         <Card
-          title="What we do"
-          desc="We develop stabilized reagent concentrates and workflow architectures for analytical systems used in water monitoring, especially where repeatable manufacturing, operational simplicity, and long-term usability matter."
+          title="What we are building"
+          desc="We are building a low-maintenance online free-chlorine monitor that combines stabilized reagent chemistry, controlled sample handling, optical readout, and digital data output."
         />
         <Card
-          title="Current focus"
-          desc="Our current technical focus is next-generation online free chlorine monitoring using stabilized TMB-derived chromogenic chemistry and kinetics-based optical detection logic."
+          title="Current status"
+          desc="The core stabilized reagent chemistry has been developed. We are now integrating it into a field-testable monitor for side-by-side comparison with standard DPD comparator measurements in real water-system workflows."
         />
       </section>
 
       <section className="grid gap-6 md:grid-cols-1">
         <Card
-          title="Why this matters for OEM partners"
-          desc="The platform is being developed to support lower-maintenance reagent workflows, longer reagent life, and practical integration into automated water-monitoring instruments."
+          title="Designed for trustworthy chlorine data"
+          desc="The goal is not simply to produce another chlorine number. The goal is to create a continuous, low-maintenance chlorine data stream that operators, alarms, and future automated water-management systems can trust."
         />
+      </section>
+
+      <section className="space-y-6">
+        <div>
+          <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
+            Intended applications
+          </h2>
+          <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
+            The first use cases are water systems where continuous free-chlorine
+            data is valuable, but frequent reagent replacement, probe
+            maintenance, or manual spot checks are operationally difficult.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          <Card
+            title="Remote and small systems"
+            desc="For drinking-water systems and distributed sites where operator visits may be limited."
+          />
+          <Card
+            title="Reuse and building water"
+            desc="For decentralized treatment, building-scale reuse, and systems that need continuous verification."
+          />
+          <Card
+            title="OEM and instrumentation partners"
+            desc="For partners interested in a stabilized chlorine-sensing chemistry layer or low-maintenance monitoring module."
+          />
+        </div>
       </section>
 
       <section className="space-y-6">
@@ -161,9 +203,10 @@ export default function Home() {
             Patent Portfolio
           </h2>
           <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
-            Our intellectual property portfolio spans reagent chemistry, detection logic,
-            analytical system integration, deployment workflows, and industrial-scale manufacturing.
-            Together, these filings reflect a platform-level approach to practical automated water monitoring.
+            Our intellectual property portfolio spans reagent chemistry,
+            detection logic, analytical system integration, deployment workflows,
+            and industrial-scale manufacturing. Together, these filings reflect a
+            platform-level approach to practical automated water monitoring.
           </p>
         </div>
 
@@ -182,6 +225,25 @@ export default function Home() {
               </ul>
             </Card>
           ))}
+        </div>
+      </section>
+
+      <section className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 md:p-8">
+        <h2 className="text-2xl font-semibold tracking-tight text-zinc-950">
+          Pilot partners
+        </h2>
+
+        <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
+          We are looking for pilot partners interested in testing
+          low-maintenance online free-chlorine monitoring for remote, reuse,
+          distributed, building-scale, or maintenance-constrained water systems.
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-3">
+          <PrimaryLink href="/chlorine-monitor">View Pilot Product</PrimaryLink>
+          <PrimaryLink href="mailto:zhang@onestep-technologies.com">
+            Contact: zhang@onestep-technologies.com
+          </PrimaryLink>
         </div>
       </section>
     </div>
