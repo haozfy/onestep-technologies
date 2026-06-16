@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Badge, Card, PrimaryLink } from "../../components/ui";
 
 const applications = [
@@ -26,7 +27,8 @@ const statusPoints = [
 
 export default function ChlorineMonitorPage() {
   return (
-    <div className="space-y-14 bg-white text-zinc-900">
+    <div className="space-y-16 bg-white text-zinc-900">
+      {/* Hero */}
       <section className="grid gap-10 md:grid-cols-12 md:items-end">
         <div className="md:col-span-8">
           <div className="flex flex-wrap items-center gap-2">
@@ -35,11 +37,11 @@ export default function ChlorineMonitorPage() {
             <Badge>24-Month Reagent Stability</Badge>
           </div>
 
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-zinc-950 md:text-5xl">
+          <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight text-zinc-950 md:text-5xl">
             Low-maintenance online free-chlorine monitoring
           </h1>
 
-          <p className="mt-4 max-w-3xl text-lg leading-8 text-zinc-700">
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-zinc-700">
             Onestep Technologies is developing an online free-chlorine monitor
             for water systems that need continuous residual-chlorine data but
             cannot support frequent reagent replacement, probe maintenance, or
@@ -50,8 +52,8 @@ export default function ChlorineMonitorPage() {
             The monitor is based on stabilized single-reagent optical chemistry
             with up to 24-month room-temperature stability, protected by U.S.
             patent rights. It is being designed to combine controlled sample
-            handling, optical readout, and digital data output to turn
-            free-chlorine residual from manual spot checks into a
+            handling, optical readout, embedded control, fluidics, and digital
+            output to turn free-chlorine residual from manual spot checks into a
             low-maintenance, machine-readable data stream.
           </p>
 
@@ -61,10 +63,11 @@ export default function ChlorineMonitorPage() {
             future automated water-management systems can trust.
           </p>
 
-          <div className="mt-6 flex flex-wrap gap-3">
+          <div className="mt-7 flex flex-wrap gap-3">
             <PrimaryLink href="mailto:zhang@onestep-technologies.com">
               Discuss Pilot or Technical Evaluation
             </PrimaryLink>
+
             <PrimaryLink href="/resources">Technical Resources</PrimaryLink>
           </div>
         </div>
@@ -75,23 +78,23 @@ export default function ChlorineMonitorPage() {
               Pilot product in development
             </h3>
 
-            <p className="mt-1 text-sm leading-6 text-zinc-600">
+            <p className="mt-2 text-sm leading-6 text-zinc-600">
               Core chemistry developed; integrated online monitor under
               development for pilot and technical evaluation.
             </p>
 
-            <div className="mt-4 space-y-2 text-sm text-zinc-700">
-              <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
+            <div className="mt-5 space-y-3 text-sm text-zinc-700">
+              <div className="flex items-center justify-between border-b border-zinc-200 pb-3">
                 <span>Core chemistry</span>
                 <span className="text-zinc-500">Developed</span>
               </div>
 
-              <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
+              <div className="flex items-center justify-between border-b border-zinc-200 pb-3">
                 <span>Reagent stability</span>
                 <span className="text-zinc-500">Up to 24 months</span>
               </div>
 
-              <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
+              <div className="flex items-center justify-between border-b border-zinc-200 pb-3">
                 <span>Monitor integration</span>
                 <span className="text-zinc-500">In progress</span>
               </div>
@@ -105,23 +108,44 @@ export default function ChlorineMonitorPage() {
         </div>
       </section>
 
+      {/* Main visual */}
+      <section className="rounded-3xl border border-zinc-200 bg-zinc-50 p-3 shadow-sm md:p-4">
+        <div className="overflow-hidden rounded-2xl bg-white">
+          <Image
+            src="/images/chlorine-monitoring-distributed-water.png"
+            alt="Onestep Technologies low-maintenance online free-chlorine monitoring for distributed water systems"
+            width={1448}
+            height={1086}
+            priority
+            className="h-auto w-full"
+          />
+        </div>
+
+        <p className="mt-3 px-1 text-xs leading-5 text-zinc-500">
+          Product concept render. Core stabilized reagent chemistry has been
+          developed; integrated online monitor is in development.
+        </p>
+      </section>
+
+      {/* Status cards */}
       <section className="grid gap-4 md:grid-cols-3">
         {statusPoints.map((point) => (
           <div
             key={point.title}
-            className="rounded-xl border border-zinc-200 bg-zinc-50 p-4"
+            className="rounded-xl border border-zinc-200 bg-zinc-50 p-5"
           >
-            <div className="text-sm font-medium text-zinc-900">
+            <div className="text-sm font-semibold text-zinc-950">
               {point.title}
             </div>
 
-            <div className="mt-1 text-sm leading-6 text-zinc-600">
+            <div className="mt-2 text-sm leading-6 text-zinc-600">
               {point.desc}
             </div>
           </div>
         ))}
       </section>
 
+      {/* Problem / approach / timing */}
       <section className="grid gap-6 md:grid-cols-3">
         <Card
           title="The problem"
@@ -139,7 +163,8 @@ export default function ChlorineMonitorPage() {
         />
       </section>
 
-      <section className="grid gap-8 md:grid-cols-12">
+      {/* Technical positioning */}
+      <section className="grid gap-8 md:grid-cols-12 md:items-start">
         <div className="md:col-span-7">
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
             Built for maintenance-constrained water systems
@@ -171,6 +196,7 @@ export default function ChlorineMonitorPage() {
         </div>
       </section>
 
+      {/* Applications */}
       <section className="space-y-6">
         <div>
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
@@ -189,7 +215,7 @@ export default function ChlorineMonitorPage() {
           {applications.map((item) => (
             <div
               key={item}
-              className="rounded-xl border border-zinc-200 bg-zinc-50 p-4 text-sm text-zinc-700"
+              className="rounded-xl border border-zinc-200 bg-zinc-50 p-4 text-sm leading-6 text-zinc-700"
             >
               {item}
             </div>
@@ -197,6 +223,7 @@ export default function ChlorineMonitorPage() {
         </div>
       </section>
 
+      {/* Value by customer type */}
       <section className="grid gap-6 md:grid-cols-3">
         <Card
           title="For operators"
@@ -214,6 +241,7 @@ export default function ChlorineMonitorPage() {
         />
       </section>
 
+      {/* CTA */}
       <section className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 md:p-8">
         <h2 className="text-2xl font-semibold tracking-tight text-zinc-950">
           Pilot and partnership inquiries
