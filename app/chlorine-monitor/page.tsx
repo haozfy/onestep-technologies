@@ -19,7 +19,7 @@ const statusPoints = [
     desc: "Designed for up to 24-month room-temperature stability.",
   },
   {
-    title: "Product stage",
+    title: "Pilot product",
     desc: "Integration into a field-testable online monitor is in progress.",
   },
 ];
@@ -30,7 +30,7 @@ export default function ChlorineMonitorPage() {
       <section className="grid gap-10 md:grid-cols-12 md:items-end">
         <div className="md:col-span-8">
           <div className="flex flex-wrap items-center gap-2">
-            <Badge>Product Direction</Badge>
+            <Badge>Pilot Product in Development</Badge>
             <Badge>Online Free Chlorine</Badge>
             <Badge>24-Month Reagent Stability</Badge>
           </div>
@@ -40,19 +40,19 @@ export default function ChlorineMonitorPage() {
           </h1>
 
           <p className="mt-4 max-w-3xl text-lg leading-8 text-zinc-700">
-            OneStep Technologies is developing an online free-chlorine monitor
+            Onestep Technologies is developing an online free-chlorine monitor
             for water systems that need continuous residual-chlorine data but
             cannot support frequent reagent replacement, probe maintenance, or
             manual testing.
           </p>
 
           <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-700">
-            The product is powered by stabilized single-reagent optical
-            chemistry with up to 24-month room-temperature stability, protected
-            by U.S. patent rights. It combines controlled sample handling,
-            optical readout, and digital data output to turn free-chlorine
-            residual from manual spot checks into a low-maintenance,
-            machine-readable data stream.
+            The monitor is based on stabilized single-reagent optical chemistry
+            with up to 24-month room-temperature stability, protected by U.S.
+            patent rights. It is being designed to combine controlled sample
+            handling, optical readout, and digital data output to turn
+            free-chlorine residual from manual spot checks into a
+            low-maintenance, machine-readable data stream.
           </p>
 
           <p className="mt-4 max-w-3xl text-base leading-7 text-zinc-700">
@@ -63,7 +63,7 @@ export default function ChlorineMonitorPage() {
 
           <div className="mt-6 flex flex-wrap gap-3">
             <PrimaryLink href="mailto:zhang@onestep-technologies.com">
-              Discuss Pilot Deployment
+              Discuss Pilot or Technical Evaluation
             </PrimaryLink>
             <PrimaryLink href="/resources">Technical Resources</PrimaryLink>
           </div>
@@ -72,12 +72,12 @@ export default function ChlorineMonitorPage() {
         <div className="md:col-span-4">
           <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-sm">
             <h3 className="text-lg font-semibold text-zinc-950">
-              Product status
+              Pilot product in development
             </h3>
 
             <p className="mt-1 text-sm leading-6 text-zinc-600">
-              Pilot product direction for low-maintenance online chlorine
-              monitoring.
+              Core chemistry developed; integrated online monitor under
+              development for pilot and technical evaluation.
             </p>
 
             <div className="mt-4 space-y-2 text-sm text-zinc-700">
@@ -125,7 +125,7 @@ export default function ChlorineMonitorPage() {
       <section className="grid gap-6 md:grid-cols-3">
         <Card
           title="The problem"
-          desc="Free chlorine is one of the most important operational signals in water systems, but many sites still rely on manual testing or online analyzers that require frequent maintenance."
+          desc="Free chlorine is one of the most important operational signals in water systems, but many sites still rely on manual testing or online analyzers that require frequent reagent replacement, calibration, or service."
         />
 
         <Card
@@ -158,14 +158,15 @@ export default function ChlorineMonitorPage() {
             burdens of reagent-based online chlorine monitoring: frequent
             reagent replacement. The next step is integrating this chemistry
             into a field-testable monitor with controlled sample handling,
-            compact optical readout, embedded control, and digital output.
+            compact optical readout, embedded control, fluidics, and digital
+            output.
           </p>
         </div>
 
         <div className="md:col-span-5">
           <Card
             title="Technical direction"
-            desc="The monitor is being designed around stabilized reagent chemistry, controlled sample handling, compact optical readout, embedded control, and digital output for integration into water-system workflows."
+            desc="The monitor is being designed around stabilized reagent chemistry, controlled sample handling, compact optical readout, embedded control, fluidics, and digital output for integration into operator workflows."
           />
         </div>
       </section>
@@ -220,18 +221,19 @@ export default function ChlorineMonitorPage() {
 
         <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
           We are open to pilot discussions with utilities, reuse operators,
-          industrial water users, and instrumentation partners interested in
-          low-maintenance online free-chlorine monitoring.
+          industrial water users, emergency water providers, and instrumentation
+          partners interested in low-maintenance online free-chlorine
+          monitoring.
         </p>
 
         <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
           For pilot deployment, OEM integration, or technical evaluation,
-          contact OneStep Technologies.
+          contact Onestep Technologies.
         </p>
 
         <div className="mt-6">
           <PrimaryLink href="mailto:zhang@onestep-technologies.com">
-            Discuss Pilot Deployment
+            Discuss Pilot or Technical Evaluation
           </PrimaryLink>
         </div>
       </section>
