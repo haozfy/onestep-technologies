@@ -20,7 +20,7 @@ export function SiteHeader() {
 
           <div className="leading-tight">
             <div className="text-sm font-semibold tracking-wide text-zinc-900">
-              OneStep Technologies
+              Onestep Technologies
             </div>
             <div className="mt-0.5 text-xs text-zinc-500">
               Online Free Chlorine Monitoring
