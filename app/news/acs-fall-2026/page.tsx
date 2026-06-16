@@ -72,13 +72,6 @@ export default function ACSFall2026Page() {
 
           <div>
             <div className="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-500">
-              Format
-            </div>
-            <p className="mt-2 text-zinc-900">Oral presentation</p>
-          </div>
-
-          <div>
-            <div className="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-500">
               Session time
             </div>
             <p className="mt-2 text-zinc-900">
