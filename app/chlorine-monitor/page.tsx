@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Badge, Card, PrimaryLink } from "../../components/ui";
 
 const applications = [
@@ -111,12 +110,10 @@ export default function ChlorineMonitorPage() {
       {/* Main visual */}
       <section className="rounded-3xl border border-zinc-200 bg-zinc-50 p-3 shadow-sm md:p-4">
         <div className="overflow-hidden rounded-2xl bg-white">
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/images/chlorine-monitoring-distributed-water.png"
             alt="Onestep Technologies low-maintenance online free-chlorine monitoring for distributed water systems"
-            width={1448}
-            height={1086}
-            priority
             className="h-auto w-full"
           />
         </div>
