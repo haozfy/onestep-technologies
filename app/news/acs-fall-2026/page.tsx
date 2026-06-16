@@ -74,7 +74,7 @@ export default function ACSFall2026Page() {
             <div className="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-500">
               Format
             </div>
-            <p className="mt-2 text-zinc-900">Oral — Digital</p>
+            <p className="mt-2 text-zinc-900">Oral presentation</p>
           </div>
 
           <div>
@@ -86,20 +86,6 @@ export default function ACSFall2026Page() {
             </p>
           </div>
         </div>
-      </section>
-
-      <section className="max-w-3xl">
-        <h2 className="text-2xl font-semibold tracking-tight text-zinc-950">
-          About the presentation
-        </h2>
-
-        <p className="mt-4 text-base leading-7 text-zinc-700">
-          The presentation focuses on OneStep Technologies&apos; approach to
-          continuous free chlorine monitoring using a stabilized TMB-derived
-          reagent system and kinetic optical detection. The work is aligned with
-          the company&apos;s broader effort to develop lower-maintenance online
-          chlorine monitoring for practical water-quality applications.
-        </p>
       </section>
     </div>
   );
