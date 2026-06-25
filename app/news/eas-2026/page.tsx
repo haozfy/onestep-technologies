@@ -54,18 +54,14 @@ export default function EAS2026NewsPage() {
         </figure>
 
         <p>
-          The presentation is titled{" "}
+          The presentation, titled{" "}
           <em className="text-zinc-900">
             A Low-Maintenance Kinetic Optical Method for Continuous Free
             Chlorine Monitoring Using a Stabilized TMB-Derived Reagent System
           </em>
-          .
-        </p>
-
-        <p>
-          The presentation will introduce OneStep Technologies&apos; approach
-          to continuous free chlorine measurement using stabilized reagent
-          chemistry and kinetic optical detection.
+          , will introduce OneStep Technologies&apos; approach to continuous
+          free chlorine measurement using stabilized reagent chemistry and
+          kinetic optical detection.
         </p>
 
         <section className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 md:p-8">
@@ -112,13 +108,13 @@ export default function EAS2026NewsPage() {
 
         <p>
           The work focuses on reducing reagent handling and maintenance
-          requirements in online chlorine monitoring while supporting
-          continuous optical measurement for distributed, industrial, and
-          field water systems.
+          requirements in online free chlorine monitoring while supporting
+          continuous measurement in distributed, industrial, and field water
+          systems.
         </p>
 
         <p>
-          Participation in EAS 2026 provides an opportunity to communicate the
+          Participation in EAS 2026 provides an opportunity to present the
           technology to analytical scientists, researchers, instrument
           developers, and industry professionals.
         </p>
