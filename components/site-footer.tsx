@@ -7,8 +7,8 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-3 text-xs text-zinc-500">
-          Stabilized reagent systems and reaction-kinetic detection platforms for
-          practical online free chlorine monitoring.
+          Stabilized reagent systems and time-gated single-read optical detection
+          platforms for practical online free chlorine monitoring.
         </div>
 
         <div className="mt-4 text-xs">
