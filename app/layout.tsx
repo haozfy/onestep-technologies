@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "OneStep Technologies | Online Free Chlorine Monitoring",
   description:
-    "Stabilized reagent systems and reaction-kinetic detection platforms for practical online free chlorine monitoring and automated water analysis.",
+    "Stabilized reagent systems and time-gated single-read optical detection platforms for practical online free chlorine monitoring and automated water analysis.",
   robots: { index: true, follow: true },
 };
 
