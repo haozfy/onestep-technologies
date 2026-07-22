@@ -25,9 +25,11 @@ export default function RootLayout({
         <div className="min-h-screen bg-white">
           <div className="relative">
             <SiteHeader />
+
             <main className="mx-auto max-w-6xl px-6 pb-20 pt-10">
               {children}
             </main>
+
             <SiteFooter />
           </div>
         </div>
