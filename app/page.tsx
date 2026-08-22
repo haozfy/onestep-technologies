@@ -39,12 +39,36 @@ const evidencePoints = [
   },
 ];
 
+const infrastructureSteps = [
+  {
+    number: "01",
+    title: "Analytical chemistry",
+    desc: "Stable chromogenic chemistry for repeatable free chlorine measurement.",
+  },
+  {
+    number: "02",
+    title: "Field deployment",
+    desc: "Simplified reagent handling and measurement architecture designed for automated operation.",
+  },
+  {
+    number: "03",
+    title: "Reliable data",
+    desc: "A practical path toward continuous, machine-readable chlorine data with lower routine burden.",
+  },
+  {
+    number: "04",
+    title: "Operational use",
+    desc: "Designed to support integration with alarms, dosing control, remote monitoring, and digital water systems.",
+  },
+];
+
 export default function Home() {
   return (
     <div className="space-y-14 bg-white text-zinc-900">
       <section className="grid gap-10 md:grid-cols-12 md:items-end">
         <div className="md:col-span-8">
           <div className="flex flex-wrap items-center gap-2">
+            <Badge>Water Data Infrastructure</Badge>
             <Badge>Online Water Monitoring</Badge>
             <Badge>Stabilized Reagent Platform</Badge>
             <Badge>Time-Gated Single-Read Detection</Badge>
@@ -77,7 +101,8 @@ export default function Home() {
             storage conditions, this measurement architecture is designed to
             reduce routine maintenance workload and create a practical route
             for online chlorine monitoring in real-world operating
-            environments.
+            environments — supporting reliable, machine-readable water data
+            for operational use.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
@@ -142,6 +167,61 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Water Data Infrastructure positioning */}
+      <section className="overflow-hidden rounded-3xl bg-zinc-950 px-6 py-8 text-white md:px-10 md:py-10">
+        <div className="max-w-3xl">
+          <div className="text-xs font-semibold uppercase tracking-[0.18em] text-zinc-400">
+            Water Data Infrastructure
+          </div>
+
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight md:text-3xl">
+            From chlorine measurement to decision-ready water data
+          </h2>
+
+          <p className="mt-4 text-base leading-7 text-zinc-300">
+            Reliable online monitoring requires more than an accurate chlorine
+            number. It requires an analytical system that can remain practical
+            in the field and generate data that instruments, operators, and
+            digital systems can use with confidence.
+          </p>
+
+          <p className="mt-3 text-base leading-7 text-zinc-300">
+            OneStep is developing the measurement layer that connects
+            stabilized chemistry with reliable operational data — helping turn
+            online free chlorine monitoring into part of the broader water data
+            infrastructure.
+          </p>
+        </div>
+
+        <div className="mt-8 grid gap-4 md:grid-cols-4">
+          {infrastructureSteps.map((step) => (
+            <div
+              key={step.number}
+              className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5"
+            >
+              <div className="text-xs font-medium text-zinc-500">
+                {step.number}
+              </div>
+
+              <div className="mt-2 text-base font-semibold text-white">
+                {step.title}
+              </div>
+
+              <div className="mt-2 text-sm leading-6 text-zinc-400">
+                {step.desc}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-7 border-t border-zinc-800 pt-5">
+          <p className="text-sm leading-6 text-zinc-400">
+            Stable measurement → practical deployment → reliable data →
+            operational decision support
+          </p>
+        </div>
+      </section>
+
       <section className="grid gap-4 md:grid-cols-3">
         {evidencePoints.map((point) => (
           <div
@@ -189,7 +269,7 @@ export default function Home() {
       <section className="grid gap-6 md:grid-cols-1">
         <Card
           title="Why this matters for OEM partners"
-          desc="The platform is being developed to support lower-maintenance reagent workflows, extended reagent life, simplified signal processing, and practical integration into automated water-monitoring instruments."
+          desc="The platform is being developed to support lower-maintenance reagent workflows, extended reagent life, simplified signal processing, reliable machine-readable data, and practical integration into automated water-monitoring instruments and digital systems."
         />
       </section>
 
