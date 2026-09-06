@@ -27,7 +27,7 @@ export default function WaterWorld2026Page() {
           Hao Zhang Recognized as 2026 WaterWorld Emerging Leader
         </h1>
 
-        <p className="mt-5 text-base text-zinc-500">June 2026</p>
+        <p className="mt-5 text-base text-zinc-500">August 2026</p>
       </header>
 
       <div className="mt-10 space-y-6 text-base leading-8 text-zinc-700">
@@ -35,6 +35,19 @@ export default function WaterWorld2026Page() {
           Hao Zhang, Founder and Director of Technology at Vancouver-based
           OneStep Technologies Inc., has been recognized by WaterWorld as a 2026
           Emerging Leader in the water industry.
+        </p>
+
+        <p>
+          Read the{" "}
+          <a
+            href="https://www.waterworld.com/young-pros/article/55396034/waterworld-emerging-leaders-2026"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-zinc-950 underline underline-offset-4 hover:text-zinc-600"
+          >
+            WaterWorld Emerging Leaders 2026 feature
+          </a>
+          .
         </p>
 
         <p>
