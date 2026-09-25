@@ -28,6 +28,7 @@ export default function ChlorineMonitorPage() {
   return (
     <div className="space-y-16 bg-white text-zinc-900">
       {/* Hero */}
+
       <section className="grid gap-10 md:grid-cols-12 md:items-end">
         <div className="md:col-span-8">
           <div className="flex flex-wrap items-center gap-2">
@@ -67,7 +68,9 @@ export default function ChlorineMonitorPage() {
               Discuss Pilot or Technical Evaluation
             </PrimaryLink>
 
-            <PrimaryLink href="/resources">Technical Resources</PrimaryLink>
+            <PrimaryLink href="/resources">
+              Technical Resources
+            </PrimaryLink>
           </div>
         </div>
 
@@ -107,24 +110,8 @@ export default function ChlorineMonitorPage() {
         </div>
       </section>
 
-      {/* Main visual */}
-      <section className="rounded-3xl border border-zinc-200 bg-zinc-50 p-3 shadow-sm md:p-4">
-        <div className="overflow-hidden rounded-2xl bg-white">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/chlorine-monitoring-distributed-water.png"
-            alt="Onestep Technologies low-maintenance online free-chlorine monitoring for distributed water systems"
-            className="h-auto w-full"
-          />
-        </div>
-
-        <p className="mt-3 px-1 text-xs leading-5 text-zinc-500">
-          Product concept render. Core stabilized reagent chemistry has been
-          developed; integrated online monitor is in development.
-        </p>
-      </section>
-
       {/* Status cards */}
+
       <section className="grid gap-4 md:grid-cols-3">
         {statusPoints.map((point) => (
           <div
@@ -143,6 +130,7 @@ export default function ChlorineMonitorPage() {
       </section>
 
       {/* Problem / approach / timing */}
+
       <section className="grid gap-6 md:grid-cols-3">
         <Card
           title="The problem"
@@ -161,6 +149,7 @@ export default function ChlorineMonitorPage() {
       </section>
 
       {/* Technical positioning */}
+
       <section className="grid gap-8 md:grid-cols-12 md:items-start">
         <div className="md:col-span-7">
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
@@ -194,6 +183,7 @@ export default function ChlorineMonitorPage() {
       </section>
 
       {/* Applications */}
+
       <section className="space-y-6">
         <div>
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
@@ -221,6 +211,7 @@ export default function ChlorineMonitorPage() {
       </section>
 
       {/* Value by customer type */}
+
       <section className="grid gap-6 md:grid-cols-3">
         <Card
           title="For operators"
@@ -239,6 +230,7 @@ export default function ChlorineMonitorPage() {
       </section>
 
       {/* CTA */}
+
       <section className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 md:p-8">
         <h2 className="text-2xl font-semibold tracking-tight text-zinc-950">
           Pilot and partnership inquiries
