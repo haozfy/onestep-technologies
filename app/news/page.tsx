@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const newsItems = [
   {
+    title: "Hao Zhang Recognized as 2026 WaterWorld Emerging Leader",
+    date: "August 2026",
+    href: "/news/waterworld-2026",
+    description:
+      "OneStep Technologies Founder and Director of Technology Hao Zhang was recognized by WaterWorld as a 2026 Emerging Leader in the water industry.",
+  },
+  {
     title: "OneStep Technologies Presentation Scheduled for EAS 2026",
     date: "June 2026",
     href: "/news/eas-2026",
@@ -23,11 +30,12 @@ const newsItems = [
       "Hao Zhang's presentation on a low-maintenance kinetic optical method for continuous free chlorine monitoring has been scheduled for the ACS Fall 2026 technical program.",
   },
   {
-    title: "Hao Zhang Recognized as 2026 WaterWorld Emerging Leader",
-    date: "June 2026",
-    href: "/news/waterworld-2026",
+    title:
+      "OneStep Technologies Selected as a Finalist in The Water Council’s Spring 2026 Tech Challenge",
+    date: "May 2026",
+    href: "/news/water-council-tech-challenge-2026",
     description:
-      "OneStep Technologies Founder and Director of Technology Hao Zhang was recognized by WaterWorld as a 2026 Emerging Leader in the water industry.",
+      "OneStep Technologies was selected as a finalist in The Water Council’s Spring 2026 Tech Challenge for its continuous free chlorine monitoring technology.",
   },
 ];
 
