@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const newsItems = [
   {
+    title: "New publication on simplified free-chlorine measurement",
+    date: "October 2026",
+    href: "/news/simplified-free-chlorine-measurement",
+    description:
+      "A new study from OneStep Technologies examines how time-resolved TMB reaction profiles and a single-reagent system can support a simpler measurement approach for free chlorine monitoring.",
+  },
+  {
     title: "Hao Zhang Recognized as 2026 WaterWorld Emerging Leader",
     date: "August 2026",
     href: "/news/waterworld-2026",
@@ -53,7 +60,8 @@ export default function NewsPage() {
 
         <p className="mt-5 text-lg leading-8 text-zinc-600">
           Updates from OneStep Technologies, including company milestones,
-          industry recognition, and public technology communications.
+          industry recognition, publications, and public technology
+          communications.
         </p>
       </section>
 
