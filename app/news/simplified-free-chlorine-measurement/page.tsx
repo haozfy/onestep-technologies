@@ -65,7 +65,7 @@ export default function SimplifiedFreeChlorineMeasurementPage() {
       <section>
         <div className="overflow-hidden rounded-2xl border border-zinc-200 bg-white">
           <Image
-            src="/news/next-research-102504.png"
+            src="/images/next-research-102504.png"
             alt="First page of the Next Research article Fixed-time readout selection from TMB reaction profiles for free chlorine"
             width={1070}
             height={1362}
@@ -73,30 +73,6 @@ export default function SimplifiedFreeChlorineMeasurementPage() {
             priority
           />
         </div>
-      </section>
-
-      <section className="border-t border-zinc-200 pt-8">
-        <p className="text-sm uppercase tracking-[0.18em] text-zinc-500">
-          Publication
-        </p>
-
-        <p className="mt-3 text-lg font-semibold text-zinc-950">
-          Fixed-time readout selection from TMB reaction profiles for free
-          chlorine
-        </p>
-
-        <p className="mt-2 text-zinc-600">
-          Hao Zhang · <em>Next Research</em>
-        </p>
-
-        <a
-          href="https://doi.org/10.1016/j.nexres.2026.102504"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-5 inline-flex items-center text-sm font-semibold text-zinc-950 underline underline-offset-4"
-        >
-          Read the article →
-        </a>
       </section>
     </article>
   );
