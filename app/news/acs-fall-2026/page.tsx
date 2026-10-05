@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "ACS Fall 2026 Presentation | OneStep Technologies",
   description:
-    "OneStep Technologies presentation scheduled for the ACS Fall 2026 technical program on low-maintenance continuous free chlorine monitoring.",
+    "OneStep Technologies presented its work on a low-maintenance fixed-time optical method for continuous free chlorine monitoring at ACS Fall 2026.",
 };
 
 export default function ACSFall2026Page() {
@@ -23,12 +23,14 @@ export default function ACSFall2026Page() {
         </p>
 
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-zinc-950 md:text-5xl">
-          OneStep Technologies presentation scheduled for ACS Fall 2026
+          OneStep Technologies presents fixed-time free chlorine monitoring at
+          ACS Fall 2026
         </h1>
 
         <p className="mt-5 text-lg leading-8 text-zinc-600">
-          Hao Zhang, Founder of OneStep Technologies, has been scheduled to
-          present in the technical program of ACS Fall 2026.
+          Hao Zhang, Founder of OneStep Technologies, presented work on a
+          low-maintenance fixed-time optical approach for continuous free
+          chlorine monitoring as part of the ACS Fall 2026 technical program.
         </p>
       </section>
 
@@ -39,7 +41,7 @@ export default function ACSFall2026Page() {
               Presentation title
             </div>
             <p className="mt-2 text-zinc-900">
-              Low-maintenance kinetic optical method for continuous free
+              Low-maintenance fixed-time optical method for continuous free
               chlorine monitoring using a stabilized TMB-derived reagent system
             </p>
           </div>
@@ -72,11 +74,9 @@ export default function ACSFall2026Page() {
 
           <div>
             <div className="text-sm font-semibold uppercase tracking-[0.18em] text-zinc-500">
-              Session time
+              Presentation date
             </div>
-            <p className="mt-2 text-zinc-900">
-              Monday, August 24, 2026, 10:00 AM – 1:40 PM
-            </p>
+            <p className="mt-2 text-zinc-900">August 24, 2026</p>
           </div>
         </div>
       </section>
