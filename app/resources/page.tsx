@@ -1,4 +1,4 @@
-import { Badge, Card, PrimaryLink } from "../../components/ui";
+import { Badge, Card } from "../../components/ui";
 
 export default function ResourcesPage() {
   return (
@@ -16,8 +16,8 @@ export default function ResourcesPage() {
 
         <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
           Peer-reviewed publications and selected technical materials related to
-          OneStep Technologies’ work in free chlorine monitoring, reagent chemistry,
-          optical measurement, and automated water analysis.
+          OneStep Technologies’ work in free chlorine monitoring, reagent
+          chemistry, optical measurement, and automated water analysis.
         </p>
       </section>
 
@@ -34,9 +34,9 @@ export default function ResourcesPage() {
             desc="Fixed-time readout selection from TMB reaction profiles for free chlorine"
           >
             <p className="text-sm leading-6 text-zinc-600">
-              Time-resolved TMB reaction profiles were used to evaluate selection
-              of a single fixed-time optical readout. The study supports a 30-second
-              absorbance measurement at 650 nm for the reagent system.
+              Time-resolved TMB reaction profiles were used to examine how a
+              single-reagent system can support a simpler measurement approach
+              for free chlorine monitoring.
             </p>
 
             <p className="mt-3 text-sm leading-6 text-zinc-500">
@@ -44,12 +44,6 @@ export default function ResourcesPage() {
               <br />
               DOI: 10.1016/j.nexres.2026.102504
             </p>
-
-            <div className="mt-4">
-              <PrimaryLink href="https://doi.org/10.1016/j.nexres.2026.102504">
-                View Publication
-              </PrimaryLink>
-            </div>
           </Card>
         </div>
       </section>
