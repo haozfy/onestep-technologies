@@ -1,4 +1,4 @@
-import { Badge, Card } from "../../components/ui";
+import { Badge, Card, PrimaryLink } from "../../components/ui";
 
 export default function ResourcesPage() {
   return (
@@ -29,6 +29,32 @@ export default function ResourcesPage() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-1">
+          <Card
+            title="Environmental Monitoring and Assessment · Research Article"
+            desc="A stabilized single-reagent TMB method for free chlorine monitoring in drinking-water-related matrices"
+          >
+            <p className="text-sm leading-6 text-zinc-600">
+              A stabilized single-reagent TMB method was evaluated across
+              drinking-water-related matrices, showing close agreement with
+              routine DPD measurements and supporting a simpler approach to
+              online free chlorine monitoring.
+            </p>
+
+            <p className="mt-3 text-sm leading-6 text-zinc-500">
+              Hao Zhang · 2026
+              <br />
+              Volume 198, Article 1142
+              <br />
+              DOI: 10.1007/s10661-026-15979-7
+            </p>
+
+            <div className="mt-4">
+              <PrimaryLink href="https://doi.org/10.1007/s10661-026-15979-7">
+                View Publication
+              </PrimaryLink>
+            </div>
+          </Card>
+
           <Card
             title="Next Research · Short Communication"
             desc="Fixed-time readout selection from TMB reaction profiles for free chlorine"
