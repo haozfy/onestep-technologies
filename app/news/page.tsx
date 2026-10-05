@@ -9,6 +9,13 @@ export const metadata: Metadata = {
 
 const newsItems = [
   {
+    title: "New publication on single-reagent free-chlorine monitoring",
+    date: "October 2026",
+    href: "/news/single-reagent-free-chlorine-monitoring",
+    description:
+      "A new study published in Environmental Monitoring and Assessment evaluates a stabilized single-reagent TMB method for free chlorine monitoring across drinking-water-related matrices, showing close agreement with routine DPD measurements.",
+  },
+  {
     title: "New publication on simplified free-chlorine measurement",
     date: "October 2026",
     href: "/news/simplified-free-chlorine-measurement",
