@@ -70,6 +70,12 @@ export default function ResourcesPage() {
               <br />
               DOI: 10.1016/j.nexres.2026.102504
             </p>
+
+            <div className="mt-4">
+              <PrimaryLink href="https://doi.org/10.1016/j.nexres.2026.102504">
+                View Publication
+              </PrimaryLink>
+            </div>
           </Card>
         </div>
       </section>
