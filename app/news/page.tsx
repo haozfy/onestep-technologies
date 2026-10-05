@@ -13,7 +13,7 @@ const newsItems = [
     date: "October 2026",
     href: "/news/simplified-free-chlorine-measurement",
     description:
-      "A new study from OneStep Technologies examines how time-resolved TMB reaction profiles and a single-reagent system can support a simpler measurement approach for free chlorine monitoring.",
+      "A new study from OneStep Technologies examines how time-resolved TMB reaction profiles can support selection of a single fixed-time readout for simpler free chlorine monitoring.",
   },
   {
     title: "Hao Zhang Recognized as 2026 WaterWorld Emerging Leader",
@@ -23,18 +23,11 @@ const newsItems = [
       "OneStep Technologies Founder and Director of Technology Hao Zhang was recognized by WaterWorld as a 2026 Emerging Leader in the water industry.",
   },
   {
-    title: "OneStep Technologies Presentation Scheduled for EAS 2026",
-    date: "June 2026",
-    href: "/news/eas-2026",
-    description:
-      "Hao Zhang will present OneStep Technologies' low-maintenance kinetic optical method for continuous free chlorine monitoring at EAS 2026 in New Jersey.",
-  },
-  {
-    title: "OneStep Technologies Presentation Scheduled for ACS Fall 2026",
-    date: "June 2026",
+    title: "OneStep Technologies Presents at ACS Fall 2026",
+    date: "August 2026",
     href: "/news/acs-fall-2026",
     description:
-      "Hao Zhang's presentation on a low-maintenance kinetic optical method for continuous free chlorine monitoring has been scheduled for the ACS Fall 2026 technical program.",
+      "Hao Zhang presented OneStep Technologies' work on a low-maintenance kinetic optical method for continuous free chlorine monitoring at ACS Fall 2026.",
   },
   {
     title:
@@ -60,8 +53,7 @@ export default function NewsPage() {
 
         <p className="mt-5 text-lg leading-8 text-zinc-600">
           Updates from OneStep Technologies, including company milestones,
-          industry recognition, publications, and public technology
-          communications.
+          industry recognition, publications, and technology developments.
         </p>
       </section>
 
