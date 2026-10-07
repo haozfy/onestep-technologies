@@ -35,7 +35,8 @@ export default function WaterCouncilTechChallenge2026Page() {
         <p>
           OneStep Technologies was selected as a finalist in The Water Council’s
           Spring 2026 Tech Challenge for its continuous free chlorine monitoring
-          technology.
+          technology. The Spring 2026 challenge specifically focused on
+          AI-native technologies for water systems.
         </p>
 
         <p>
