@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -8,6 +9,13 @@ export const metadata: Metadata = {
 };
 
 const newsItems = [
+  {
+    title: "OneStep Technologies Research Featured in Scienmag",
+    date: "October 2026",
+    href: "/news/scienmag-coverage",
+    description:
+      "Scienmag featured OneStep Technologies' research on a stabilized single-reagent TMB method for free chlorine monitoring, highlighting its agreement with the established DPD reference method and potential applications in automated water quality monitoring.",
+  },
   {
     title: "New publication on single-reagent free-chlorine monitoring",
     date: "October 2026",
@@ -71,7 +79,9 @@ export default function NewsPage() {
             href={item.href}
             className="block rounded-2xl border border-zinc-200 bg-white p-6 transition hover:border-zinc-300 hover:bg-zinc-50"
           >
-            <div className="text-sm text-zinc-500">{item.date}</div>
+            <div className="text-sm text-zinc-500">
+              {item.date}
+            </div>
 
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-zinc-950">
               {item.title}
