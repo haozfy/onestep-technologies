@@ -10,6 +10,13 @@ export const metadata: Metadata = {
 
 const newsItems = [
   {
+    title: "New Viewpoint Published in ACS ES&T Water",
+    date: "October 2026",
+    href: "/news/acs-viewpoint",
+    description:
+      "Hao Zhang's new Viewpoint, published as part of the ACS cross-journal Special Issue 'Circular Water Economy,' explores how online free chlorine monitoring can evolve beyond analytical measurement to become part of the data infrastructure of modern water systems.",
+  },
+  {
     title: "OneStep Technologies Research Featured in Scienmag",
     date: "October 2026",
     href: "/news/scienmag-coverage",
