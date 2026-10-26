@@ -7,7 +7,6 @@ export default function ResourcesPage() {
         <div className="flex flex-wrap items-center gap-2">
           <Badge>Resources</Badge>
           <Badge>Publications</Badge>
-          <Badge>Peer Reviewed</Badge>
         </div>
 
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-950">
@@ -15,20 +14,47 @@ export default function ResourcesPage() {
         </h1>
 
         <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-700">
-          Peer-reviewed publications and selected technical materials related to
-          OneStep Technologies’ work in free chlorine monitoring, reagent
-          chemistry, optical measurement, and automated water analysis.
+          Research articles, viewpoints, and selected technical materials
+          related to OneStep Technologies’ work in free chlorine monitoring,
+          reagent chemistry, optical measurement, and automated water analysis.
         </p>
       </section>
 
       <section>
         <div className="mb-6">
           <h2 className="text-xl font-semibold tracking-tight text-zinc-950">
-            Peer-reviewed publications
+            Publications
           </h2>
         </div>
 
         <div className="grid gap-6 md:grid-cols-1">
+          <Card
+            title="ACS ES&T Water · Viewpoint"
+            desc="Free Chlorine Monitoring as Water Data Infrastructure for Circular Water Systems"
+          >
+            <p className="text-sm leading-6 text-zinc-600">
+              This Viewpoint explores how online free chlorine monitoring
+              can evolve beyond analytical measurement to become part of
+              the data infrastructure of modern water systems, emphasizing
+              reliable, decision-ready data for treatment verification
+              and operational management.
+            </p>
+
+            <p className="mt-3 text-sm leading-6 text-zinc-500">
+              Hao Zhang · 2026
+              <br />
+              Published online October 23, 2026
+              <br />
+              DOI: 10.1021/acsestwater.6c00844
+            </p>
+
+            <div className="mt-4">
+              <PrimaryLink href="https://doi.org/10.1021/acsestwater.6c00844">
+                View Publication
+              </PrimaryLink>
+            </div>
+          </Card>
+
           <Card
             title="Environmental Monitoring and Assessment · Research Article"
             desc="A stabilized single-reagent TMB method for free chlorine monitoring in drinking-water-related matrices"
@@ -86,7 +112,7 @@ export default function ResourcesPage() {
         </h2>
 
         <p className="mt-3 max-w-3xl text-sm leading-6 text-zinc-500">
-          Additional peer-reviewed publications and technical materials will be
+          Additional publications and technical materials will be
           added as they become available.
         </p>
 
