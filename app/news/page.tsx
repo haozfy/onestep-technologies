@@ -1,4 +1,3 @@
-
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -64,19 +63,10 @@ const newsItems = [
 export default function NewsPage() {
   return (
     <div className="space-y-12">
-      <section className="max-w-3xl">
-        <p className="text-sm font-medium uppercase tracking-[0.24em] text-zinc-500">
+      <section>
+        <h1 className="text-4xl font-semibold tracking-tight text-zinc-950 md:text-5xl">
           News
-        </p>
-
-        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-zinc-950 md:text-5xl">
-          News & Recognition
         </h1>
-
-        <p className="mt-5 text-lg leading-8 text-zinc-600">
-          Updates from OneStep Technologies, including company milestones,
-          industry recognition, publications, and technology developments.
-        </p>
       </section>
 
       <section className="grid gap-6">
