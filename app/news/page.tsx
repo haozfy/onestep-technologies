@@ -1,13 +1,31 @@
+
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "News | OneStep Technologies",
   description:
-    "News and recognition from OneStep Technologies, a Vancouver-based water technology company developing online free chlorine monitoring systems.",
+    "News, publications, and recognition from OneStep Technologies, a Vancouver-based water technology company developing automated free-chlorine monitoring systems.",
 };
 
-const newsItems = [
+type NewsItem = {
+  title: string;
+  date: string;
+  href: string;
+  description: string;
+  image?: string;
+};
+
+const newsItems: NewsItem[] = [
+  {
+    title: "OneStep Technologies Joins NVIDIA Inception",
+    date: "October 2026",
+    href: "/news/nvidia-inception",
+    image: "/images/onestep.png",
+    description:
+      "OneStep Technologies has joined NVIDIA Inception, a program designed to support startups. As the company advances its automated free-chlorine monitoring technology, it plans to explore AI-assisted data analysis, instrument performance monitoring, and remote diagnostics to support more intelligent water quality monitoring systems.",
+  },
   {
     title: "New Viewpoint Published in ACS ES&T Water",
     date: "October 2026",
@@ -16,28 +34,32 @@ const newsItems = [
       "Hao Zhang's new Viewpoint, published as part of the ACS cross-journal Special Issue 'Circular Water Economy,' explores how online free chlorine monitoring can evolve beyond analytical measurement to become part of the data infrastructure of modern water systems.",
   },
   {
-    title: "OneStep Technologies Research Featured in Scienmag",
+    title:
+      "OneStep Technologies Research Featured in Scienmag",
     date: "October 2026",
     href: "/news/scienmag-coverage",
     description:
       "Scienmag featured OneStep Technologies' research on a stabilized single-reagent TMB method for free chlorine monitoring, highlighting its agreement with the established DPD reference method and potential applications in automated water quality monitoring.",
   },
   {
-    title: "New publication on single-reagent free-chlorine monitoring",
+    title:
+      "New publication on single-reagent free-chlorine monitoring",
     date: "October 2026",
     href: "/news/single-reagent-free-chlorine-monitoring",
     description:
       "A new study published in Environmental Monitoring and Assessment evaluates a stabilized single-reagent TMB method for free chlorine monitoring across drinking-water-related matrices, showing close agreement with routine DPD measurements.",
   },
   {
-    title: "New publication on simplified free-chlorine measurement",
+    title:
+      "New publication on simplified free-chlorine measurement",
     date: "October 2026",
     href: "/news/simplified-free-chlorine-measurement",
     description:
       "A new study from OneStep Technologies examines how time-resolved TMB reaction profiles can support selection of a single fixed-time readout for simpler free chlorine monitoring.",
   },
   {
-    title: "Hao Zhang Recognized as 2026 WaterWorld Emerging Leader",
+    title:
+      "Hao Zhang Recognized as 2026 WaterWorld Emerging Leader",
     date: "August 2026",
     href: "/news/waterworld-2026",
     description:
@@ -83,6 +105,19 @@ export default function NewsPage() {
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-zinc-950">
               {item.title}
             </h2>
+
+            {item.image && (
+              <div className="mt-5 max-w-2xl overflow-hidden rounded-xl border border-zinc-200 bg-white">
+                <Image
+                  src={item.image}
+                  alt="OneStep Technologies and NVIDIA Inception Program"
+                  width={1200}
+                  height={600}
+                  sizes="(max-width: 768px) 100vw, 672px"
+                  className="h-auto w-full object-contain"
+                />
+              </div>
+            )}
 
             <p className="mt-3 max-w-3xl text-base leading-7 text-zinc-600">
               {item.description}
