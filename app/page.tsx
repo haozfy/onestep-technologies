@@ -151,10 +151,6 @@ export default function Home() {
               className="h-auto w-full object-contain"
               priority
             />
-
-            <p className="mt-3 text-center text-sm font-medium text-zinc-600 transition group-hover:text-zinc-900">
-              Member of NVIDIA Inception
-            </p>
           </Link>
 
           {/* Why it matters */}
