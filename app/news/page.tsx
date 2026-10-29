@@ -19,12 +19,13 @@ type NewsItem = {
 
 const newsItems: NewsItem[] = [
   {
-    title: "OneStep Technologies Joins NVIDIA Inception",
+    title:
+      "OneStep Technologies Joins NVIDIA Inception to Advance AI-Enabled Water Monitoring",
     date: "October 2026",
     href: "/news/nvidia-inception",
     image: "/images/onestep.png",
     description:
-      "OneStep Technologies has joined NVIDIA Inception, a program designed to support startups. As the company advances its automated free-chlorine monitoring technology, it plans to explore AI-assisted data analysis, instrument performance monitoring, and remote diagnostics to support more intelligent water quality monitoring systems.",
+      "OneStep Technologies has joined NVIDIA Inception and plans to explore AI-assisted data analysis, instrument performance monitoring, and remote diagnostics as it advances its automated free-chlorine monitoring technology.",
   },
   {
     title: "New Viewpoint Published in ACS ES&T Water",
