@@ -1,3 +1,6 @@
+
+import Image from "next/image";
+import Link from "next/link";
 import { Badge, Card, PrimaryLink } from "../components/ui";
 
 const patentGroups = [
@@ -65,7 +68,11 @@ const infrastructureSteps = [
 export default function Home() {
   return (
     <div className="space-y-14 bg-white text-zinc-900">
+
+      {/* Main introduction */}
       <section className="grid gap-10 md:grid-cols-12 md:items-end">
+
+        {/* Left column */}
         <div className="md:col-span-8">
           <div className="flex flex-wrap items-center gap-2">
             <Badge>Water Data Infrastructure</Badge>
@@ -114,7 +121,9 @@ export default function Home() {
               Manufacturing Model
             </PrimaryLink>
 
-            <PrimaryLink href="/resources">Resources</PrimaryLink>
+            <PrimaryLink href="/resources">
+              Resources
+            </PrimaryLink>
           </div>
 
           <p className="mt-4 text-xs leading-6 text-zinc-500">
@@ -124,7 +133,31 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="md:col-span-4">
+        {/* Right column */}
+        <div className="flex flex-col gap-8 md:col-span-4 md:self-stretch md:justify-between">
+
+          {/* NVIDIA Inception recognition */}
+          <Link
+            href="/news/nvidia-inception"
+            aria-label="Read about OneStep Technologies joining NVIDIA Inception"
+            className="group block rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm transition hover:border-zinc-300 hover:shadow-md"
+          >
+            <Image
+              src="/images/onestep.png"
+              alt="OneStep Technologies and NVIDIA Inception Program"
+              width={1200}
+              height={600}
+              sizes="(max-width: 768px) 100vw, 33vw"
+              className="h-auto w-full object-contain"
+              priority
+            />
+
+            <p className="mt-3 text-center text-sm font-medium text-zinc-600 transition group-hover:text-zinc-900">
+              Member of NVIDIA Inception
+            </p>
+          </Link>
+
+          {/* Why it matters */}
           <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-sm">
             <h3 className="text-lg font-semibold text-zinc-950">
               Why it matters
@@ -148,7 +181,9 @@ export default function Home() {
 
               <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
                 <span>Maintenance workload</span>
-                <span className="text-zinc-500">Designed to be reduced</span>
+                <span className="text-zinc-500">
+                  Designed to be reduced
+                </span>
               </div>
 
               <div className="flex items-center justify-between border-b border-zinc-200 pb-2">
@@ -222,6 +257,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Evidence points */}
       <section className="grid gap-4 md:grid-cols-3">
         {evidencePoints.map((point) => (
           <div
@@ -232,11 +268,14 @@ export default function Home() {
               {point.title}
             </div>
 
-            <div className="mt-1 text-sm text-zinc-600">{point.desc}</div>
+            <div className="mt-1 text-sm text-zinc-600">
+              {point.desc}
+            </div>
           </div>
         ))}
       </section>
 
+      {/* Platform overview */}
       <section className="grid gap-6 md:grid-cols-3">
         <Card
           title="What problem we address"
@@ -273,6 +312,7 @@ export default function Home() {
         />
       </section>
 
+      {/* Patent portfolio */}
       <section className="space-y-6">
         <div>
           <h2 className="text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
@@ -290,7 +330,11 @@ export default function Home() {
 
         <div className="grid gap-6 md:grid-cols-3">
           {patentGroups.map((group) => (
-            <Card key={group.title} title={group.title} desc={group.desc}>
+            <Card
+              key={group.title}
+              title={group.title}
+              desc={group.desc}
+            >
               <ul className="mt-4 space-y-2 text-sm leading-6 text-zinc-700">
                 {group.items.map((item) => (
                   <li
